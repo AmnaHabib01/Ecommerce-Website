@@ -1,102 +1,106 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-commerce Watch App</title>
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-    rel="stylesheet"/>
-    <link rel="stylesheet" href="src/style.css" type="text/css" />
-  </head>
-  
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MASH WATCHES</title>
+  <link rel="stylesheet" href="src/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
 
-    <div class="header-main mobile-hide">
-      <div class="container">
-        <div class="wrapper flex-item">
-          <div class="left">
-                    <div class="dpt-cat">
-                      <div class="dpt-head">
-                        <div class="main-text">All Departments
-                          <p>Total 1059 Products</p>
-                        </div>
-                          <a href="#" class="dpt-trigger mobile-hide">
-                           <i class="ri-menu-3-line ri-xl"></i>
-                          </a>
-                           
-                      </div>
+<body>
+  <!-- Top Black Strip -->
+  <div class="top-strip">
+    <span>EXCLUSIVE WATCH SALE – UP TO 40% OFF + FREE WORLDWIDE SHIPPING!  
+      <a href="#">SHOP NOW</a>
+    </span>
+  </div>
 
-                      <div class="dpt-menu">
-                        <ul class="second-links">
-                          <li>
-                            <a href="#">
-                              Platinum Series
-                           <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
-                            </a>
-                          </li>
+  <!-- Social + Shipping Bar -->
+  <div class="top-bar">
+    <div class="left">
+      <span>⌚ 3.1M Watch Lovers</span>
+      <span>Free Shipping on all luxury watches above $199. <a href="#">Explore Now.</a></span>
+    </div>
+    <div class="right">
+      <a href="#">Order Tracking</a>
+      <select>
+        <option>English</option>
+        <option>Urdu</option>
+      </select>
+      <select>
+        <option>USD</option>
+        <option>PKR</option>
+      </select>
+    </div>
+  </div>
 
-                          <li>
-                            <a href="#">
-                              AMOLED Smartwatch
-                            <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
-                            </a>
-                          </li>
+  <!-- Header -->
+  <header>
+    <div class="logo">MASH WATCHES</div>
+    <div class="search-box">
+      <input type="text" placeholder="Search your favorite watch...">
+      <select>
+        <option>Select Category</option>
+        <option>Men Watches</option>
+        <option>Women Watches</option>
+        <option>Smart Watches</option>
+        <option>Luxury Watches</option>
+      </select>
+    </div>
+    <div class="icons">
+      <span>👤</span>
+      <span>♡ 0</span>
+      <span>$0.00</span>
+      <span>🛒 0</span>
+    </div>
+  </header>
 
-                          <li>
-                            <a href="#">
-                              Gaming Earbuds
-                           <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
-                            </a>
-                          </li>
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">ALL WATCHES</a></li>
+      <li><a href="#">MEN</a></li>
+      <li><a href="#">WOMEN</a></li>
+      <li><a href="#">SMART</a></li>
+      <li><a href="#">LUXURY</a></li>
+      <li><a href="#">BLOG</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+  </nav>
 
-                          <li>
-                            <a href="#">
-                              Smart Fitness
-                            </a>
-                          </li>
+  <!-- Sidebar + Hero -->
+  <section class="main-section">
+    <aside class="sidebar">
+      <h4>Watch Categories <span class="count">48</span></h4>
+      <ul>
+        <li>Men’s Watches</li>
+        <li>Women’s Watches</li>
+        <li>Smart Watches <span class="tag hot">HOT</span></li>
+        <li>Luxury Watches</li>
+        <li>Chronograph</li>
+        <li>Automatic</li>
+        <li>Digital</li>
+        <li>Classic Leather</li>
+        <li>Metal Straps <span class="tag new">NEW</span></li>
+        <li>Sports Watches</li>
+      </ul>
+    </aside>
+    
+    <div class="hero">
+    <img src="WATCHES.jpg" alt="Hero Banner - Watches">
+      <div class="hero-text">
+        <p>FALL 2025 COLLECTION</p>
+        <h1>Luxury & Smart Watches for Every Style</h1>
+        <a href="#" class="btn-shop">Shop Now</a>
 
-                          <li>
-                            <a href="#">
-                              Smart Watch
-                            </a>
-                          </li>
 
-                          <li>
-                            <a href="#">
-                              Smart Band
-                            </a>
-                          </li>
+            
 
-                          <li>
-                            <a href="#">
-                              Accessories
-                            </a>
-                          </li>
-
-                        </ul>
-                      </div>
-          
-                  
-                    </div>
-          </div>
-          <div class="right">
-                 <div class="search-box">
-                  <form action="" class="search">
-                      <span class="icon-large"><i class="ri-search-line"></i></span>
-                      <input type="text" class="search" placeholder="Search for products..." />
-                      <button type="submit">Search</button>
-                  </form>
-                 </div>
-          </div>
-
-        </div>
 
       </div>
-
     </div>
-    
-    <script type="module" src="/src/main.js"></script>
-  </body>
+  </section>
+</body>
 </html>
