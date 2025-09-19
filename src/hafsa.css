@@ -329,8 +329,215 @@ nav ul li a:hover {
       display: inline-block;
       padding: 10px 20px;
       background: #800080;
+      border: none;
       color: white;
       text-decoration: none;
       border-radius: 5px;
       font-weight: bold;
+    }
+    .btn-shop:hover {
+      background: #5a005a;
+    }
+
+    
+    /* NEW SECTION GRIDS */
+     
+    .watch-collection {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .watch-card {
+      color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+    }
+
+    /* Overlay for readability */
+    .watch-card::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(188, 99, 247, 0.5);
+      border-radius: 10px;
+    }
+
+    .watch-card h3,
+    .watch-card h1,
+    .watch-card p,
+    .watch-card button {
+      position: relative;
+      z-index: 1;
+    }
+
+    .watch-card h3 {
+      font-size: 16px;
+      margin-bottom: 10px;
+      font-weight: normal;
+    }
+
+    .watch-card h1 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .watch-card p {
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+
+    .watch-card button {
+      padding: 10px 20px;
+      background: purple;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      max-width: fit-content;
+      font-size: 15px;
+    }
+
+    .watch-card button:hover {
+      background: #4b004b;
+    }
+
+    /* Background images */
+    .mens-watch {
+      background-image: url("https://i0.wp.com/watchcentre.pk/wp-content/uploads/2022/04/qq-ladies-wrist-watches-banner.jpg?fit=800%2C400&ssl=1"); 
+
+    }
+
+    .womens-watch {
+      background-image: url("https://i0.wp.com/watchcentre.pk/wp-content/uploads/2022/04/casio-ladies-wrist-watches-banner.jpg?fit=800%2C400&ssl=1"); 
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .watch-collection {
+        grid-template-columns: 1fr;
+      }
+      .watch-card {
+        text-align: center;
+      }
+    }
+    
+    /* PEFOOTER */
+    .prefooter {
+      background-color: black; /* Purple */
+      color: #fff;
+      padding: 60px 50px;
+    }
+
+    .prefooter-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: auto;
+      gap: 50px;
+    }
+
+    /* Left side (newsletter) */
+    .newsletter {
+      flex: 1 1 45%;
+      margin-bottom: 20px;
+    }
+
+    .newsletter h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .newsletter p {
+      font-size: 16px;
+      margin-bottom: 15px;
+      color: #e5e5e5;
+    }
+
+    .newsletter input[type="email"] {
+      padding: 12px;
+      width: 65%;
+      border: none;
+      border-radius: 4px 0 0 4px;
+      outline: none;
+      font-size: 14px;
+    }
+
+    .newsletter button {
+      padding: 12px 20px;
+      border: none;
+      background:purple;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 0 4px 4px 0;
+      font-size: 14px;
+    }
+
+    .newsletter small {
+      display: block;
+      margin-top: 10px;
+      font-size: 12px;
+      color: #ccc;
+    }
+
+    /* Right side (help + apps) */
+    .help {
+      flex: 1 1 45%;
+    }
+
+    .help h3 {
+      font-size: 22px;
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+
+    .help p {
+      font-size: 16px;
+      margin-bottom: 15px;
+      color: #e5e5e5;
+    }
+
+    .app-buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .app-buttons img {
+      width: 140px;
+      cursor: pointer;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .prefooter-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .newsletter input[type="email"] {
+        width: 100%;
+        border-radius: 4px;
+        margin-bottom: 10px;
+      }
+
+      .newsletter button {
+        width: 100%;
+        border-radius: 4px;
+      }
+
+      .app-buttons {
+        justify-content: center;
+      }
     }
