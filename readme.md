@@ -1,16 +1,21 @@
+step1 
+git branch
+git checkout Amna-Habib
+git add .
+git commit -m "new code"
+git push origin Amna-Habib
 
+step2  Update your branch with the newest main changes
 git checkout Amna-Habib
 git fetch origin
 git merge origin/main
 
+git push origin Amna-Habib  only my branch will be updated
 
 
-git add header.html header.css header.js
-git commit -m "Added header section"
-git push origin header-branch
 
 
-//for matching main code on local 
-git checkout main
-git pull origin main
 
+
+
+   

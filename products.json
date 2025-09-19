@@ -1,85 +1,95 @@
 [
   {
     "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
-    "name": "CHECK PRINT SHIRT",
+    "name": "smart watch1",
     "price": 110,
-    "id": 1
+    "id": 1,
+     "category": "Smart Watches"
   },
   {
     "imgUrl": "https://zerolifestyle.co/cdn/shop/files/lunar_Blue-Leather_1.webp?v=1756721289&width=1000",
-    "name": "GLORIA HIGH LOGO SNEAKER",
+    "name": "smart watch2",
     "price": 91,
-    "id": 2
+    "id": 2,
+      "category": "Men Watches"
   },
   {
     "imgUrl": "https://zerolifestyle.co/cdn/shop/files/B2_78e4cc8a-80bb-42c8-9c15-7172943294f8.webp?v=1755328277&width=1000",
-    "name": "CATE RIGID BAG",
+    "name": "smart watch3",
     "price": 94.5,
     "id": 3
   },
   {
     "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
-    "name": "GUESS CONNECT WATCH",
+     "name": "smart watch4",
     "price": 438.9,
-    "id": 4
+    "id": 4,
+     "category": "Men Watches"
   },
   {
     "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
-    "name": "'70s RETRO GLAM KEFIAH",
+     "name": "smart watch5",
     "price": 20,
-    "id": 5
+    "id": 5,
+     "category": "Men Watches"
   },
   {
     "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
-    "name": "'70s RETRO GLAM KEFIAH",
+   "name": "smart watch6",
     "price": 40,
     "id": 6
   },
   {
     "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
-    "name": "'70s RETRO GLAM KEFIAH",
+    "name": "smart watch7",
     "price": 50,
     "id": 7
   },
   {
     "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
-    "name": "'70s RETRO GLAM KEFIAH",
+    "name": "smart watch8",
     "price": 40,
     "id": 8
   },
   {
     "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
-    "name": "'70s RETRO GLAM KEFIAH",
+     "name": "smart watch9",
     "price": 40,
     "id": 9
   },
   {
     "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
-    "name": "'70s RETRO GLAM KEFIAH",
+     "name": "smart watch10",
     "price": 40,
     "id": 9
   },
   {
     "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
-    "name": "'70s RETRO GLAM KEFIAH",
+     "name": "smart watch11",
     "price": 40,
     "id": 9
   },
   {
     "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
-    "name": "'70s RETRO GLAM KEFIAH",
+     "name": "smart watch12",
     "price": 40,
     "id": 9
   },
   {
     "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
-    "name": "'70s RETRO GLAM KEFIAH",
+     "name": "smart watch13",
     "price": 40,
     "id": 9
   },
   {
     "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
-    "name": "'70s RETRO GLAM KEFIAH",
+     "name": "smart watch14",
+    "price": 40,
+    "id": 9
+  },
+  {
+    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
+     "name": "smart watch15",
     "price": 40,
     "id": 9
   }

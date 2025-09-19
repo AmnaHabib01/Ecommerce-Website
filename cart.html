@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Cart - MASH WATCHES</title>
+  <link rel="stylesheet" href="src/cart.css">
+</head>
+<body>
+  <header>
+    <h1>🛒 Your Cart</h1>
+    <a href="amna.html">← Continue Shopping</a>
+  </header>
+
+  <main class="cart-container">
+    <section id="cart-items"></section>
+
+    <aside class="cart-summary">
+      <h2>Order Summary</h2>
+      <p>Subtotal: $<span id="subtotal">0.00</span></p>
+      <p>Tax (10%): $<span id="tax">0.00</span></p>
+      <h3>Total: $<span id="total">0.00</span></h3>
+
+      <input type="text" id="coupon" placeholder="Enter Coupon (e.g. SAVE10)">
+      <button onclick="applyCoupon()">Apply Coupon</button>
+
+      <form id="checkout-form">
+        <h3>Checkout</h3>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Address" required>
+        <button type="submit">Place Order</button>
+      </form>
+    </aside>
+  </main>
+
+  <script src="src/cart.js"></script>
+</body>
+</html>
