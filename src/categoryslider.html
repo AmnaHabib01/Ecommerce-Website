@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="categoryslider.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header-text">
+      <h2>Best for your categories</h2>
+      <p>23 categories belonging to a total of 34,592 products</p>
+    </div>
+
+    <div class="slider-wrapper">
+      <button class="arrow-btn arrow-left" onclick="moveSlide(-1)">&#10094;</button>
+
+      <div class="slider-viewport">
+        <div class="slider-grid" id="sliderGrid">
+          <div class="card">
+            <img src="https://zerolifestyle.co/cdn/shop/files/Envi_1.webp?v=1752225994&width=800" alt="Watch 1">
+            <div class="watch-name">Chic Brown</div>
+          </div>
+          <div class="card">
+            <img src="https://zerolifestyle.co/cdn/shop/files/2_bdb30c06-4a67-45f3-8b36-0dedad4579a1.jpg?v=1754740631&width=800" alt="Watch 2">
+            <div class="watch-name">Classic Gold</div>
+          </div>
+          <div class="card">
+            <img src="https://zerolifestyle.co/cdn/shop/files/02_14d4c7f7-c21c-49be-8519-5f340b58ebd5.webp?v=1734007033&width=800" alt="Watch 3">
+            <div class="watch-name">Silver Elegance</div>
+          </div>
+          <div class="card">
+            <img src="https://zerolifestyle.co/cdn/shop/files/ICON-Magenta-2.webp?v=1752499934&width=1300alt=" alt="Watch 4">
+            <div class="watch-name">Leather Pro</div>
+          </div>
+          <div class="card">
+            <img src="https://zerolifestyle.co/cdn/shop/files/Black_4_c986e7b0-a61c-41d3-a8ce-4a469882bade.webp?v=1752432598&width=1200" alt="Watch 5">
+            <div class="watch-name">Rose Gold</div>
+          </div>
+          <div class="card">
+            <img src="https://zerolifestyle.co/cdn/shop/files/silver_4_35749c97-d365-44fc-aa24-b7b94532fa1a.webp?v=1748252474&width=1200" alt="Watch 6">
+            <div class="watch-name">SportX</div>
+          </div>
+          <div class="card">
+            <img src="https://zerolifestyle.co/cdn/shop/files/BLACKWATCHFACE.webp?v=1755331884&width=1300" alt="Watch 7">
+            <div class="watch-name">Minimalist White</div>
+          </div>
+          <div class="card">
+            <img src="https://zerolifestyle.co/cdn/shop/files/CopperSilver_1.webp?v=1756127463&width=1200" alt="Watch 8">
+            <div class="watch-name">Dark Knight</div>
+          </div>
+        </div>
+      </div>
+
+      <button class="arrow-btn arrow-right" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+  </div>
+
+  <script>
+    const sliderGrid = document.getElementById('sliderGrid');
+    const cardWidth = 280 + 20; // 280px card + 20px gap
+    const visibleCards = 4;
+    let currentIndex = 0;
+
+    function moveSlide(direction) {
+      const maxIndex = sliderGrid.children.length - visibleCards;
+      currentIndex += direction;
+
+      if (currentIndex < 0) currentIndex = 0;
+      if (currentIndex > maxIndex) currentIndex = maxIndex;
+
+      sliderGrid.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    }
+  </script>
+
+    
+</body>
+</html>
