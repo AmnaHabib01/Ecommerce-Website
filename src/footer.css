@@ -1,0 +1,153 @@
+/* Footer Styles */
+.footer {
+  background-color: #ffffff;
+  color: #333333;
+  padding: 50px 20px;
+  border-top: 2px solid #800080;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px; /* gap between left and right */
+  flex-wrap: nowrap; /* prevent wrapping on desktop */
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Left Section */
+.footer-left {
+  flex: 1 1 250px;
+  min-width: 250px;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555555;
+}
+
+/* Right Section (all lists) */
+.footer-center {
+  flex: 3 1 auto;
+  display: flex;
+  flex-wrap: nowrap; /* single row on desktop */
+  gap: 80px; /* space between each list column */
+  overflow: visible; /* disable horizontal scroll */
+  padding-bottom: 0;
+}
+
+.footer-column {
+  flex: 0 0 180px; /* fixed width */
+  min-width: 180px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #800080;
+  padding-bottom: 5px;
+  color: #800080;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 20px;
+}
+
+.footer-column ul li a {
+  color: #555555;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #800080;
+}
+
+/* Responsive */
+
+/* Tablet and smaller desktops */
+@media (max-width: 992px) {
+  .footer-container {
+    flex-wrap: nowrap; /* keep left and right side by side */
+    gap: 40px;
+  }
+
+  .footer-center {
+    gap: 40px; /* reduce gap */
+  }
+
+  .footer-column {
+    flex: 0 0 160px;
+    min-width: 160px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-left,
+  .footer-center {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .footer-center {
+    flex-wrap: wrap; /* stack columns vertically */
+    justify-content: center;
+    gap: 30px;
+    overflow: visible; /* no scroll */
+    padding-bottom: 0;
+  }
+
+  .footer-column {
+    flex: 1 1 100%; /* full width each */
+    min-width: auto;
+  }
+
+  .footer-logo {
+    margin: 0 auto 20px auto; /* center logo */
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .footer-center {
+    gap: 20px;
+  }
+
+  .footer-column {
+    flex: 1 1 100%; /* full width */
+  }
+
+  .footer-description {
+    font-size: 14px;
+  }
+
+  .footer-column h3 {
+    font-size: 16px;
+  }
+
+  .footer-column ul li a {
+    font-size: 14px;
+  }
+}
