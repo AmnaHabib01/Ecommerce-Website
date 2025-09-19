@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Features Section</title>
+    <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+      padding: 3rem 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .features-section {
+      background: white;
+      border-radius: 12px;
+      padding: 3rem 2rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      border: 1px solid #e9ecef;
+    }
+
+    /* Force 4 items in a row */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2.5rem;
+      align-items: start;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 0.5rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      border-radius: 8px;
+    }
+
+    .feature-icon {
+      flex-shrink: 0;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      border-radius: 8px;
+      margin-top: 0.25rem;
+    }
+
+    .feature-content {
+      flex: 1;
+    }
+
+    .feature-title {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: #212529;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.025em;
+    }
+
+    .feature-description {
+      font-size: 0.875rem;
+      color: #6c757d;
+      line-height: 1.5;
+    }
+
+    /* Hover effects */
+    .feature-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      background: #fafbfc;
+    }
+
+    .feature-item:hover .feature-title {
+      color: #495057;
+    }
+
+    /* Responsive design */
+    @media (max-width: 1024px) {
+      .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  </head>
+  <body>
+  <div class="container">
+    <div class="features-section">
+      <div class="features-grid">
+        <!-- Free Shipping -->
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg class="icon-shipping" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.5">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16,6 16,16 21,16 21,11 16,6"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                <path d="M7 8h6"></path>
+                <path d="M7 11h4"></path>
+            </svg>
+          </div>
+          <div class="feature-content">
+            <h3 class="feature-title">Free Shipping</h3>
+            <p class="feature-description">Free Shipping for orders over $130.</p>
+          </div>
+        </div>
+
+        <!-- Money Guarantee -->
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg class="icon-guarantee" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.5">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="m9 12 2 2 4-4"></path>
+            </svg>
+          </div>
+          <div class="feature-content">
+            <h3 class="feature-title">Money Guarantee</h3>
+            <p class="feature-description">Within 30 days for an exchange.</p>
+          </div>
+        </div>
+
+        <!-- Online Support -->
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg class="icon-support" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.5">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+          </div>
+          <div class="feature-content">
+            <h3 class="feature-title">Online Support</h3>
+            <p class="feature-description">Available 24/7 for your help.</p>
+          </div>
+        </div>
+
+        <!-- Flexible Payment -->
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg class="icon-payment" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.5">
+                <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                <line x1="1" y1="10" x2="23" y2="10"></line>
+                <rect x="3" y="14" width="4" height="2"></rect>
+                <rect x="9" y="14" width="6" height="2"></rect>
+            </svg>
+          </div>
+          <div class="feature-content">
+            <h3 class="feature-title">Flexible Payment</h3>
+            <p class="feature-description">Pay with Multiple Credit Cards.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
