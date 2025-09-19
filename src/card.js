@@ -1,10 +1,8 @@
-// Select product container
 const productList = document.getElementById("product-list");
 
-// Fetch products from local JSON file
 async function loadProducts() {
   try {
-    const response = await fetch("products.json");
+    const response = await fetch("products.json"); // make sure products.json is in the same folder
     const products = await response.json();
 
     products.forEach(product => {
@@ -28,5 +26,4 @@ async function loadProducts() {
   }
 }
 
-// Call function
 loadProducts();

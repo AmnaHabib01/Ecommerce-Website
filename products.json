@@ -12,7 +12,7 @@
     "id": 2
   },
   {
-     "imgUrl": "https://zerolifestyle.co/cdn/shop/files/B2_78e4cc8a-80bb-42c8-9c15-7172943294f8.webp?v=1755328277&width=1000",
+    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/B2_78e4cc8a-80bb-42c8-9c15-7172943294f8.webp?v=1755328277&width=1000",
     "name": "CATE RIGID BAG",
     "price": 94.5,
     "id": 3
@@ -24,33 +24,63 @@
     "id": 4
   },
   {
-    "imgUrl": "",
+    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
     "name": "'70s RETRO GLAM KEFIAH",
     "price": 20,
     "id": 5
   },
   {
-    "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/AW6308VIS03-SAP?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0",
+    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
     "name": "'70s RETRO GLAM KEFIAH",
     "price": 40,
     "id": 6
   },
   {
-    "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/AW6308VIS03-SAP?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0",
+    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
     "name": "'70s RETRO GLAM KEFIAH",
     "price": 50,
     "id": 7
   },
-   {
-    "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/AW6308VIS03-SAP?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0",
+  {
+    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
     "name": "'70s RETRO GLAM KEFIAH",
     "price": 40,
-    "id": 6
+    "id": 8
   },
-   {
-    "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/AW6308VIS03-SAP?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0",
+  {
+    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
     "name": "'70s RETRO GLAM KEFIAH",
     "price": 40,
-    "id": 6
+    "id": 9
+  },
+  {
+    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
+    "name": "'70s RETRO GLAM KEFIAH",
+    "price": 40,
+    "id": 9
+  },
+  {
+    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
+    "name": "'70s RETRO GLAM KEFIAH",
+    "price": 40,
+    "id": 9
+  },
+  {
+    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
+    "name": "'70s RETRO GLAM KEFIAH",
+    "price": 40,
+    "id": 9
+  },
+  {
+    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
+    "name": "'70s RETRO GLAM KEFIAH",
+    "price": 40,
+    "id": 9
+  },
+  {
+    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
+    "name": "'70s RETRO GLAM KEFIAH",
+    "price": 40,
+    "id": 9
   }
 ]
