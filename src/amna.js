@@ -1,6 +1,11 @@
 function toggleMenu() {
     document.querySelector("nav ul").classList.toggle("active");
   }
+  // Full width section with youtube link
+   function openVideo() {
+      window.open("https://www.youtube.com/watch?v=hJZ68qhqbIE", "_blank"); 
+      // replace with your Mash Watches YouTube link
+    }
 let currentSlide = 0;
     const slides = document.getElementById('slides');
     const totalSlides = slides.children.length;
@@ -152,3 +157,79 @@ updateCartIcon();
 // Initial load
 loadProducts();
 
+//js of cards (sadiqa)
+// sliderCards.js
+document.addEventListener("DOMContentLoaded", () => {
+  const track = document.getElementById("sliderGrid");
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
+
+  if (!track || !prevBtn || !nextBtn) return; // stop if elements not found
+
+  let slidesGrid = Array.from(track.children);
+  let currentIndex = 4; // start after cloned slides
+  let slideWidth;
+
+  // Clone first 4 and last 4 slides for infinite looping
+  const cloneFirst = slidesGrid.slice(0, 4).map(slide => slide.cloneNode(true));
+  const cloneLast = slidesGrid.slice(-4).map(slide => slide.cloneNode(true));
+
+  cloneFirst.forEach(clone => track.appendChild(clone));
+  cloneLast.forEach(clone => track.insertBefore(clone, track.firstChild));
+
+  slidesGrid = Array.from(track.children);
+
+  // Set/update slide width and initial position
+  function updateSliderGridWidth() {
+    slideWidth = slidesGrid[0].offsetWidth + 20; // width + gap
+    moveSliderGridToIndex(currentIndex, false);
+  }
+
+  // Move slider to specific index
+  function moveSliderGridToIndex(index, transition = true) {
+    track.style.transition = transition ? "transform 0.4s ease-in-out" : "none";
+    track.style.transform = `translateX(-${index * slideWidth}px)`;
+  }
+
+  // Go to next slide
+  function nextGridSlide() {
+    if (currentIndex >= slidesGrid.length - 4) return;
+    currentIndex++;
+    moveSliderGridToIndex(currentIndex);
+    track.addEventListener("transitionend", handleNextGridLoop);
+  }
+
+  // Go to previous slide
+  function prevGridSlide() {
+    if (currentIndex <= 0) return;
+    currentIndex--;
+    moveSliderGridToIndex(currentIndex);
+    track.addEventListener("transitionend", handlePrevGridLoop);
+  }
+
+  // Loop back to start if at the end
+  function handleNextGridLoop() {
+    if (currentIndex === slidesGrid.length - 4) {
+      track.style.transition = "none";
+      currentIndex = 4;
+      moveSliderGridToIndex(currentIndex, false);
+    }
+    track.removeEventListener("transitionend", handleNextGridLoop);
+  }
+
+  // Loop back to end if at the start
+  function handlePrevGridLoop() {
+    if (currentIndex === 0) {
+      track.style.transition = "none";
+      currentIndex = slidesGrid.length - 8;
+      moveSliderGridToIndex(currentIndex, false);
+    }
+    track.removeEventListener("transitionend", handlePrevGridLoop);
+  }
+
+  // Event listeners
+  nextBtn.addEventListener("click", nextGridSlide);
+  prevBtn.addEventListener("click", prevGridSlide);
+  window.addEventListener("resize", updateSliderGridWidth);
+  updateSliderGridWidth();
+});

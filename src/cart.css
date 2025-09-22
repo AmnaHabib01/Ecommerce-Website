@@ -9,7 +9,7 @@ body {
 
 /* HEADER */
 header {
-  background: #800080;
+  background:  #288fb4;
   color: #fff;
   padding: 15px 20px;
   display: flex;
@@ -36,7 +36,7 @@ header h1 {
 
 /* White button for Continue Shopping */
 .btn-white {
-  background: #800080;
+  background:  #288fb4;
   color: #f9f8f9;
   padding: 8px 16px;
   border-radius: 6px;
@@ -105,7 +105,7 @@ header h1 {
 .cart-item p {
   margin: 5px 0;
   font-weight: bold;
-  color: #800080;
+  color:  #288fb4;
 }
 
 .cart-item .quantity {
@@ -116,7 +116,7 @@ header h1 {
 }
 
 .cart-item .quantity button {
-  background: #800080;
+  background:  #288fb4;
   color: #fff;
   border: none;
   padding: 5px 10px;
@@ -157,7 +157,7 @@ header h1 {
 
 .cart-summary button {
   width: 100%;
-  background: #800080;
+  background:  #288fb4;
   color: #fff;
   border: none;
   padding: 12px;
@@ -205,7 +205,7 @@ header h1 {
 }
 
 #order-confirmation h1 {
-  color: #800080;
+  color:  #288fb4;
   font-size: 28px;
   margin-bottom: 10px;
 }
@@ -221,5 +221,5 @@ header h1 {
 .order-details h2 {
   margin-top: 0;
   font-size: 20px;
-  color: #800080;
+  color:  #288fb4;
 }
