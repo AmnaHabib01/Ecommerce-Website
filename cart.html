@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping Cart - MASH WATCHES</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/cart.css">
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <img src="./images/logo.jpg" alt="MASH WATCHES" class="logo"> <!-- replace with your logo path -->
+      <h1>Shopping Cart</h1>
+    </div>
+    <a href="amna.html" class="btn-white">← Continue Shopping</a>
+  </header>
+
+  <main id="cart-section" class="cart-container">
+  <section id="cart-items">
+    <h2>Your Items</h2>
+    <!-- cart items will be injected here -->
+  </section>
+
+  <aside class="cart-summary">
+    <h2>Order Summary</h2>
+    <p>Subtotal: $<span id="subtotal">0.00</span></p>
+    <p>Tax (10%): $<span id="tax">0.00</span></p>
+    <h3>Total: $<span id="total">0.00</span></h3>
+
+    <input type="text" id="coupon" placeholder="Enter Coupon (e.g. SAVE10)">
+    <button onclick="applyCoupon()">Apply Coupon</button>
+
+    <form id="checkout-form">
+      <h3>Checkout</h3>
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="text" id="address" placeholder="Address" required>
+      <button type="submit">Place Order</button>
+    </form>
+  </aside>
+</main>
+
+  <section id="order-confirmation" class="hidden">
+  <h1>🎉 Order Placed Successfully!</h1>
+  <p>Thank you for shopping with <strong>MASH WATCHES</strong>.</p>
+  
+  <div class="order-details">
+    <h2>Order Details</h2>
+    <p><strong>Name:</strong> <span id="conf-name"></span></p>
+    <p><strong>Email:</strong> <span id="conf-email"></span></p>
+    <p><strong>Address:</strong> <span id="conf-address"></span></p>
+    <p><strong>Total Paid:</strong> $<span id="conf-total"></span></p>
+  </div>
+
+  <a href="amna.html" class="btn-white">← Continue Shopping</a>
+</section>
+  <script src="src/cart.js"></script>
+</body>
+</html>

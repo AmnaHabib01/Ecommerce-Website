@@ -1,86 +1,107 @@
 [
   {
     "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
-    "name": "CHECK PRINT SHIRT",
+    "name": "Luna Smart Silver",
     "price": 110,
-    "id": 1
+    "id": 1,
+    "category": "Smart Watches"
   },
   {
     "imgUrl": "https://zerolifestyle.co/cdn/shop/files/lunar_Blue-Leather_1.webp?v=1756721289&width=1000",
-    "name": "GLORIA HIGH LOGO SNEAKER",
+    "name": "Lunar Blue Leather",
     "price": 91,
-    "id": 2
+    "id": 2,
+    "category": "Men Watches"
   },
   {
     "imgUrl": "https://zerolifestyle.co/cdn/shop/files/B2_78e4cc8a-80bb-42c8-9c15-7172943294f8.webp?v=1755328277&width=1000",
-    "name": "CATE RIGID BAG",
+    "name": "Classic Black Dial",
     "price": 94.5,
-    "id": 3
+    "id": 3,
+    "category": "Luxury Watches"
   },
   {
-    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
-    "name": "GUESS CONNECT WATCH",
+    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/STRAP01.webp?v=1754740631&width=1000",
+    "name": "Chrono Steel Strap",
     "price": 438.9,
-    "id": 4
+    "id": 4,
+    "category": "Men Watches"
   },
   {
-    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
-    "name": "'70s RETRO GLAM KEFIAH",
+    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/10_399dc067-cd8e-4eed-b2e3-2596b2aa4f2d.webp?v=1758011358&width=1000",
+    "name": "Urban Black Edition",
     "price": 20,
-    "id": 5
+    "id": 5,
+    "category": "Men Watches"
   },
   {
-    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
-    "name": "'70s RETRO GLAM KEFIAH",
+    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/lunapro_silver.webp?v=1755332955&width=1000",
+    "name": "Luna Pro Silver",
     "price": 40,
-    "id": 6
+    "id": 6,
+    "category": "Smart Watches"
   },
   {
-    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
-    "name": "'70s RETRO GLAM KEFIAH",
+    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/1_4580ef02-470d-4cd4-ab4f-232477cf2302.webp?v=1736870078&width=900",
+    "name": "Midnight Black Strap",
     "price": 50,
-    "id": 7
+    "id": 7,
+    "category": "Men Watches"
   },
   {
-    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
-    "name": "'70s RETRO GLAM KEFIAH",
+    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/BlackGold_2.webp?v=1754741041&width=1000",
+    "name": "Black Gold Royale",
     "price": 40,
-    "id": 8
+    "id": 8,
+    "category": "Luxury Watches"
   },
   {
-    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
-    "name": "'70s RETRO GLAM KEFIAH",
+    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Jewel_1_57b8f293-03c2-46be-9f76-79cf4af38c09.webp?v=1744982542&width=1000",
+    "name": "Jewel Rose Edition",
     "price": 40,
-    "id": 9
+    "id": 9,
+    "category": "Women Watches"
   },
   {
-    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
-    "name": "'70s RETRO GLAM KEFIAH",
+    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Black_4_c986e7b0-a61c-41d3-a8ce-4a469882bade.webp?v=1752432598&width=1000",
+    "name": "Shadow Black Dial",
     "price": 40,
-    "id": 9
+    "id": 10,
+    "category": "Men Watches"
   },
   {
-    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
-    "name": "'70s RETRO GLAM KEFIAH",
+    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Royale_Silver_0000_4ff066ec-9e04-4cbd-a3bb-82cca00f738c.webp?v=1725970778&width=1000",
+    "name": "Royale Silver Classic",
     "price": 40,
-    "id": 9
+    "id": 11,
+    "category": "Luxury Watches"
   },
   {
-    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
-    "name": "'70s RETRO GLAM KEFIAH",
+    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/MAGNETICMARSALAORANGE_2.webp?v=1723130004&width=1000",
+    "name": "Magnetic Marsala",
     "price": 40,
-    "id": 9
+    "id": 12,
+    "category": "Women Watches"
   },
   {
-    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
-    "name": "'70s RETRO GLAM KEFIAH",
+    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/B2_78e4cc8a-80bb-42c8-9c15-7172943294f8.webp?v=1755328277&width=1000",
+    "name": "Classic Black Edition",
     "price": 40,
-    "id": 9
+    "id": 13,
+    "category": "Luxury Watches"
   },
   {
-    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/Luna-_5_3.webp?v=1752225993&width=1000",
-    "name": "'70s RETRO GLAM KEFIAH",
+    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/BLACKWATCHFACE.webp?v=1755331884&width=1000",
+    "name": "Bold Black Face",
     "price": 40,
-    "id": 9
+    "id": 14,
+    "category": "Men Watches"
+  },
+  {
+    "imgUrl": "https://zerolifestyle.co/cdn/shop/files/BlackGold_2.webp?v=1754741041&width=1000",
+    "name": "Gold Luxe Edition",
+    "price": 40,
+    "id": 15,
+    "category": "Luxury Watches"
   }
 ]
