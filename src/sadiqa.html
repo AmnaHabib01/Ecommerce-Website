@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="sadiqa.css" />
+  <title>Watch Collection</title>
+</head>
+<body>
+  <!-- Grid 1: Men's & Women's Collection side by side -->
+  <div class="watch-collection grid-1">
+    <div class="watch-card mens-watch">
+      <h3>Men’s Collection</h3>
+      <h1>Luxury Timepieces</h1>
+      <p>Bold, powerful designs built for confidence and style.</p>
+      <button>Shop Men →</button>
+    </div>
+
+    <div class="watch-card womens-watch">
+      <h3>Women’s Collection</h3>
+      <h1>Elegant Watches</h1>
+      <p>Graceful designs crafted to complement every occasion.</p>
+      <button>Shop Women →</button>
+    </div>
+  </div>
+
+  <!-- Category Slider Container -->
+  <div class="slider-wrapper category-slider-wrapper">
+    <button class="arrow arrow-left" id="prevBtn">&#10094;</button>
+
+    <div class="slider-viewport">
+      <div class="slider-grid" id="sliderGrid">
+        <!-- Slide Cards Start -->
+        <div class="slide">
+          <div class="slide-image">
+            <img
+              src="https://zerolifestyle.co/cdn/shop/files/STRAP01.webp?v=1754740631&width=1300"
+              alt="Watch 1"
+            />
+          </div>
+          <div class="slide-caption">Strap 01</div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-image">
+            <img
+              src="https://zerolifestyle.co/cdn/shop/files/Black_4_c986e7b0-a61c-41d3-a8ce-4a469882bade.webp?v=1752432598&width=1200"
+              alt="Watch 2"
+            />
+          </div>
+          <div class="slide-caption">Black Leather</div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-image">
+            <img
+              src="https://zerolifestyle.co/cdn/shop/files/lunar_Green-Leather_1.webp?v=1756987036&width=1200"
+              alt="Watch 3"
+            />
+          </div>
+          <div class="slide-caption">Lunar Green</div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-image">
+            <img
+              src="https://zerolifestyle.co/cdn/shop/files/1_ee8ac544-ead9-49a7-84c0-9f8c4a75d15d.webp?v=1756127463&width=1300"
+              alt="Watch 4"
+            />
+          </div>
+          <div class="slide-caption">Elegant Brown</div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-image">
+            <img
+              src="https://zerolifestyle.co/cdn/shop/files/01_fdba08f1-6dfb-44a1-bfe7-462b8adc9d5b.webp?v=1734678583&width=1300"
+              alt="Watch 5"
+            />
+          </div>
+          <div class="slide-caption">Modern Steel</div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-image">
+            <img
+              src="https://zerolifestyle.co/cdn/shop/files/ICON-Magenta-2.webp?v=1752499934&width=1300"
+              alt="Watch 6"
+            />
+          </div>
+          <div class="slide-caption">Icon Magenta</div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-image">
+            <img
+              src="https://zerolifestyle.co/cdn/shop/files/ICON-Silver-2.webp?v=1755342500&width=1300"
+              alt="Watch 7"
+            />
+          </div>
+          <div class="slide-caption">Royale Silver</div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-image">
+            <img
+              src="https://zerolifestyle.co/cdn/shop/files/01_fdba08f1-6dfb-44a1-bfe7-462b8adc9d5b.webp?v=1734678583&width=1300"
+              alt="Watch 8"
+            />
+          </div>
+          <div class="slide-caption">Layer G</div>
+        </div>
+        <!-- Slide Cards End -->
+      </div>
+    </div>
+
+    <button class="arrow arrow-right" id="nextBtn">&#10095;</button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <img
+          src="https://cdn.logojoy.com/wp-content/uploads/2018/05/30164218/1900-768x768.png"
+          alt="Company Logo"
+          class="footer-logo"
+        />
+        <p class="footer-description">
+          Our store is dedicated to offering the best watches worldwide,
+          focusing on quality and customer satisfaction.
+        </p>
+      </div>
+      <div class="footer-center">
+        <div class="footer-column">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="#">Shop Men</a></li>
+            <li><a href="#">Shop Women</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Best Sellers</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>About</h3>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const track = document.getElementById("sliderGrid");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+
+    let slides = Array.from(track.children);
+    const totalSlides = slides.length;
+
+    // Clone first 4 and last 4 slides for infinite looping effect
+    const cloneFirst = slides.slice(0, 4).map((slide) => slide.cloneNode(true));
+    const cloneLast = slides
+      .slice(-4)
+      .map((slide) => slide.cloneNode(true));
+
+    cloneFirst.forEach((clone) => track.appendChild(clone));
+    cloneLast.forEach((clone) => track.insertBefore(clone, track.firstChild));
+
+    slides = Array.from(track.children);
+    let currentIndex = 4; // Start after cloned slides
+    let slideWidth;
+
+    function updateSliderWidth() {
+      slideWidth = slides[0].offsetWidth + 20; // slide width + gap
+      moveToIndex(currentIndex, false);
+    }
+
+    function moveToIndex(index, transition = true) {
+      if (transition) {
+        track.style.transition = "transform 0.4s ease-in-out";
+      } else {
+        track.style.transition = "none";
+      }
+      track.style.transform = `translateX(-${index * slideWidth}px)`;
+    }
+
+    function nextSlide() {
+      if (currentIndex >= slides.length - 4) return;
+      currentIndex++;
+      moveToIndex(currentIndex);
+      track.addEventListener("transitionend", handleNextLoop);
+    }
+
+    function prevSlide() {
+      if (currentIndex <= 0) return;
+      currentIndex--;
+      moveToIndex(currentIndex);
+      track.addEventListener("transitionend", handlePrevLoop);
+    }
+
+    function handleNextLoop() {
+      if (currentIndex === slides.length - 4) {
+        track.style.transition = "none";
+        currentIndex = 4;
+        moveToIndex(currentIndex, false);
+      }
+      track.removeEventListener("transitionend", handleNextLoop);
+    }
+
+    function handlePrevLoop() {
+      if (currentIndex === 0) {
+        track.style.transition = "none";
+        currentIndex = slides.length - 8;
+        moveToIndex(currentIndex, false);
+      }
+      track.removeEventListener("transitionend", handlePrevLoop);
+    }
+
+    nextBtn.addEventListener("click", nextSlide);
+    prevBtn.addEventListener("click", prevSlide);
+    window.addEventListener("resize", updateSliderWidth);
+    window.addEventListener("load", () => {
+      updateSliderWidth();
+    });
+  </script>
+</body>
+</html>
