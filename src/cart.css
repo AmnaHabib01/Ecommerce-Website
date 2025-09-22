@@ -1,13 +1,13 @@
 /* === CART PAGE STYLING === */
-
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   background: #f8f8f8;
   color: #333;
 }
 
+/* HEADER */
 header {
   background: #800080;
   color: #fff;
@@ -17,12 +17,42 @@ header {
   align-items: center;
 }
 
-header a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 14px;
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
+.logo {
+  height: 40px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* White button for Continue Shopping */
+.btn-white {
+  background: #800080;
+  color: #f9f8f9;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid #fff;
+  transition: 0.3s;
+}
+
+.btn-white:hover {
+  background: transparent;
+  color: #47043b;
+  border-color: #fff;
+}
+
+/* MAIN CONTAINER */
 .cart-container {
   display: flex;
   justify-content: space-between;
@@ -38,6 +68,13 @@ header a {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+#cart-items h2 {
+  margin-top: 0;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
 .cart-item {
@@ -62,6 +99,7 @@ header a {
 .cart-item h4 {
   margin: 0;
   font-size: 18px;
+  font-weight: 600;
 }
 
 .cart-item p {
@@ -106,6 +144,7 @@ header a {
 
 .cart-summary h2, .cart-summary h3 {
   margin: 10px 0;
+  font-weight: 700;
 }
 
 .cart-summary input {
@@ -146,4 +185,41 @@ header a {
   .cart-summary {
     width: 100%;
   }
+}
+
+
+
+/* hidden */
+.hidden {
+  display: none;
+}
+
+#order-confirmation {
+  text-align: center;
+  padding: 40px;
+  background: #fff;
+  margin: 30px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  max-width: 600px;
+}
+
+#order-confirmation h1 {
+  color: #800080;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.order-details {
+  margin: 20px 0;
+  text-align: left;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.order-details h2 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #800080;
 }

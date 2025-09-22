@@ -71,12 +71,32 @@ function saveCart() {
   localStorage.setItem("cart", JSON.stringify(cart));
 }
 
+//order success page 
 document.getElementById("checkout-form").addEventListener("submit", (e) => {
   e.preventDefault();
-  alert("Order placed successfully!");
+
+  // Get form data
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const address = document.getElementById("address").value;
+  const total = document.getElementById("total").innerText;
+
+  // Hide cart section
+  document.getElementById("cart-section").classList.add("hidden");
+
+  // Show confirmation section
+  document.getElementById("order-confirmation").classList.remove("hidden");
+
+  // Fill confirmation details
+  document.getElementById("conf-name").innerText = name;
+  document.getElementById("conf-email").innerText = email;
+  document.getElementById("conf-address").innerText = address;
+  document.getElementById("conf-total").innerText = total;
+
+  // Empty cart after order
   cart = [];
   saveCart();
-  renderCart();
 });
+
 
 renderCart();
