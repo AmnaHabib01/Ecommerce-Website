@@ -1,4 +1,5 @@
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
+let couponApplied = false; // track coupon application
 
 function renderCart() {
   const container = document.getElementById("cart-items");
@@ -17,7 +18,7 @@ function renderCart() {
       <img src="${item.imgUrl}" alt="${item.name}">
       <div>
         <h4>${item.name}</h4>
-        <p>$${item.price}</p>
+        <p>$${item.price.toFixed(2)}</p>
         <div class="quantity">
           <button onclick="changeQty(${i}, -1)">-</button>
           <span>${item.quantity}</span>
@@ -46,24 +47,49 @@ function removeItem(index) {
 }
 
 function updateSummary() {
-  const subtotal = cart.reduce((sum, i) => sum + i.price * i.quantity, 0);
-  const tax = subtotal * 0.1;
-  const total = subtotal + tax;
+  let subtotal = cart.reduce((sum, i) => sum + i.price * i.quantity, 0);
+
+  // only apply discount if coupon applied
+  if (couponApplied) {
+    subtotal = +(subtotal * 0.9).toFixed(2);
+  }
+
+  const tax = +(subtotal * 0.1).toFixed(2);
+  const total = +(subtotal + tax).toFixed(2);
 
   document.getElementById("subtotal").textContent = subtotal.toFixed(2);
   document.getElementById("tax").textContent = tax.toFixed(2);
   document.getElementById("total").textContent = total.toFixed(2);
 }
 
+function showToast(message) {
+  const toast = document.getElementById("toast");
+  toast.textContent = message;
+  toast.classList.add("show");
+  setTimeout(() => toast.classList.remove("show"), 2500);
+}
+
 function applyCoupon() {
   const code = document.getElementById("coupon").value;
+  const subtotal = cart.reduce((sum, i) => sum + i.price * i.quantity, 0);
+
+  if (subtotal <= 0) {
+    showToast("Add items to cart before applying coupon");
+    return;
+  }
+
+  if (couponApplied) {
+    showToast("Coupon already applied");
+    return;
+  }
+
   if (code === "SAVE10") {
-    cart = cart.map(item => ({ ...item, price: item.price * 0.9 }));
+    couponApplied = true;
     saveCart();
     renderCart();
-    alert("Coupon applied! 10% off");
+    showToast("Coupon applied! 10% off on subtotal");
   } else {
-    alert("Invalid coupon code");
+    showToast("Invalid coupon code");
   }
 }
 
@@ -71,32 +97,26 @@ function saveCart() {
   localStorage.setItem("cart", JSON.stringify(cart));
 }
 
-//order success page 
+// Order success page
 document.getElementById("checkout-form").addEventListener("submit", (e) => {
   e.preventDefault();
 
-  // Get form data
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const address = document.getElementById("address").value;
   const total = document.getElementById("total").innerText;
 
-  // Hide cart section
   document.getElementById("cart-section").classList.add("hidden");
-
-  // Show confirmation section
   document.getElementById("order-confirmation").classList.remove("hidden");
 
-  // Fill confirmation details
   document.getElementById("conf-name").innerText = name;
   document.getElementById("conf-email").innerText = email;
   document.getElementById("conf-address").innerText = address;
   document.getElementById("conf-total").innerText = total;
 
-  // Empty cart after order
   cart = [];
+  couponApplied = false; // reset coupon for next order
   saveCart();
 });
-
 
 renderCart();

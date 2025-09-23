@@ -10,10 +10,10 @@
 </head>
 
 <body>
-  <!-- Top Purple Strip -->
+  <!-- Top darkred Strip -->
   <div class="top-strip">
-    <span>EXCLUSIVE WATCH SALE – UP TO 40% OFF + FREE WORLDWIDE SHIPPING!
-      <a href="#">SHOP NOW</a>
+    <span>EXCLUSIVE WATCH SALE – UP TO 10% OFF + FREE WORLDWIDE SHIPPING!
+      <a href="#product-list">SHOP NOW</a>
     </span>
   </div>
 
@@ -22,10 +22,9 @@
   <div class="top-bar">
     <div class="left">
       <span>⌚ 3.1M Watch Lovers</span>
-      <span>Free Shipping on all luxury watches above Rs 10000. <a href="#">Explore Now.</a></span>
+      <span>Save 10% with a discount coupon on all orders.Shop now<a href="#product-list">Explore Now.</a></span>
     </div>
     <div class="right">
-      <a href="#">Order Tracking</a>
       <select>
         <option>English</option>
         <option>Urdu</option>
@@ -40,7 +39,7 @@
 
   <!-- Header -->
   <header>
-    <div class="logo"><a href="#"><img src="images/logo.jpg"></a></div>
+    <div class="logo"><a href="#"><img src="./images/logo2.png"></a></div>
     <div class="search-box">
       <input type="text" placeholder="Search your favorite watch...">
       <select>
@@ -52,10 +51,12 @@
       </select>
     </div>
     <div class="icons">
-      <span>👤</span>
-      <span>♡ 0</span>
+
       <a href="cart.html" class="cart-link">
-        🛒 Cart (<span id="cart-count">0</span>)
+        <div class="cart-icon">
+          <img src="./images/shopping-bag (1).png" alt="Cart" class="cart-img">
+          <span id="cart-count" class="cart-badge" style="color: wheat;">0</span>
+        </div>
       </a>
 
     </div>
@@ -103,17 +104,18 @@
 
     <div class="slider">
       <div class="slides" id="slides">
-       <img src="https://images.lifestyleasia.com/wp-content/uploads/sites/2/2025/04/01130434/rolex-watches-and-wonders-2025-releases-daytona-land-dweller-hero.jpg" alt="Luxury Watches">
-        <img src="https://zerolifestyle.co/cdn/shop/files/platinum-banner.webp?v=1752327405" alt="Smart Watches">
-        <img src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202309/untitled_-_2023-09-12t224205-sixteen_nine.jpg?size=948:533" alt="Classic Watches">
+        <img src="./images/Watch-01.jpg" alt="Luxury Watches">
+        <img src="./images/Watch02.jpg" alt="Smart Watches">
+        <img src="./images/Watch03.jpg" alt="Classic Watches">
       </div>
 
       <div class="hero-text">
-        <h2>Discover Your Perfect Timepiece</h2>
-        <p>Explore our exclusive collection of luxury, smart, and classic watches. Find the one that matches your style
-          and personality.</p>
-        <button class="shop-now">SHOP NOW</button>
+        <h2>Luxury Timepieces</h2>
+        <p>Crafted with precision, made for elegance.</p>
+        <button class="shop-now">Shop Now</button>
       </div>
+
+
       <button class="prev" onclick="prevSlide()">❮</button>
       <button class="next" onclick="nextSlide()">❯</button>
     </div>
@@ -195,7 +197,7 @@
   </section>
   <!-- Banner full width -->
 
-   <section class="vision-banner">
+  <section class="vision-banner">
     <!-- Background video -->
     <video autoplay muted loop playsinline>
       <source src="./images/watches.mp4" type="video/mp4">
@@ -209,22 +211,6 @@
       <button class="vision-btn" onclick="openVideo()">Watch Video</button>
     </div>
   </section>
-  <!-- Grid 1: Men's & Women's Collection side by side -->
-  <div class="watch-collection grid-1">
-    <div class="watch-card mens-watch">
-      <h3>Men’s Collection</h3>
-      <h1>Luxury Timepieces</h1>
-      <p>Bold, powerful designs built for confidence and style.</p>
-      <button>Shop Men →</button>
-    </div>
-
-    <div class="watch-card womens-watch">
-      <h3>Women’s Collection</h3>
-      <h1>Elegant Watches</h1>
-      <p>Graceful designs crafted to complement every occasion.</p>
-      <button>Shop Women →</button>
-    </div>
-  </div>
 
   <!-- Category Slider Container -->
   <div class="slider-wrapper category-slider-wrapper">
@@ -235,10 +221,7 @@
         <!-- Slide Cards Start -->
         <div class="slide">
           <div class="slide-image">
-            <img
-              src="https://zerolifestyle.co/cdn/shop/files/STRAP01.webp?v=1754740631&width=1300"
-              alt="Watch 1"
-            />
+            <img src="https://zerolifestyle.co/cdn/shop/files/STRAP01.webp?v=1754740631&width=1300" alt="Watch 1" />
           </div>
           <div class="slide-caption">Strap 01</div>
         </div>
@@ -247,18 +230,15 @@
           <div class="slide-image">
             <img
               src="https://zerolifestyle.co/cdn/shop/files/Black_4_c986e7b0-a61c-41d3-a8ce-4a469882bade.webp?v=1752432598&width=1200"
-              alt="Watch 2"
-            />
+              alt="Watch 2" />
           </div>
           <div class="slide-caption">Black Leather</div>
         </div>
 
         <div class="slide">
           <div class="slide-image">
-            <img
-              src="https://zerolifestyle.co/cdn/shop/files/lunar_Green-Leather_1.webp?v=1756987036&width=1200"
-              alt="Watch 3"
-            />
+            <img src="https://zerolifestyle.co/cdn/shop/files/lunar_Green-Leather_1.webp?v=1756987036&width=1200"
+              alt="Watch 3" />
           </div>
           <div class="slide-caption">Lunar Green</div>
         </div>
@@ -267,8 +247,7 @@
           <div class="slide-image">
             <img
               src="https://zerolifestyle.co/cdn/shop/files/1_ee8ac544-ead9-49a7-84c0-9f8c4a75d15d.webp?v=1756127463&width=1300"
-              alt="Watch 4"
-            />
+              alt="Watch 4" />
           </div>
           <div class="slide-caption">Elegant Brown</div>
         </div>
@@ -277,28 +256,23 @@
           <div class="slide-image">
             <img
               src="https://zerolifestyle.co/cdn/shop/files/01_fdba08f1-6dfb-44a1-bfe7-462b8adc9d5b.webp?v=1734678583&width=1300"
-              alt="Watch 5"
-            />
+              alt="Watch 5" />
           </div>
           <div class="slide-caption">Modern Steel</div>
         </div>
 
         <div class="slide">
           <div class="slide-image">
-            <img
-              src="https://zerolifestyle.co/cdn/shop/files/ICON-Magenta-2.webp?v=1752499934&width=1300"
-              alt="Watch 6"
-            />
+            <img src="https://zerolifestyle.co/cdn/shop/files/ICON-Magenta-2.webp?v=1752499934&width=1300"
+              alt="Watch 6" />
           </div>
           <div class="slide-caption">Icon Magenta</div>
         </div>
 
         <div class="slide">
           <div class="slide-image">
-            <img
-              src="https://zerolifestyle.co/cdn/shop/files/ICON-Silver-2.webp?v=1755342500&width=1300"
-              alt="Watch 7"
-            />
+            <img src="https://zerolifestyle.co/cdn/shop/files/ICON-Silver-2.webp?v=1755342500&width=1300"
+              alt="Watch 7" />
           </div>
           <div class="slide-caption">Royale Silver</div>
         </div>
@@ -307,8 +281,7 @@
           <div class="slide-image">
             <img
               src="https://zerolifestyle.co/cdn/shop/files/01_fdba08f1-6dfb-44a1-bfe7-462b8adc9d5b.webp?v=1734678583&width=1300"
-              alt="Watch 8"
-            />
+              alt="Watch 8" />
           </div>
           <div class="slide-caption">Layer G</div>
         </div>
@@ -320,7 +293,7 @@
   </div>
   <!-- Review Section -->
 
-    <section class="reviews-section">
+  <section class="reviews-section">
     <h2>Latest Buyers Reviews</h2>
     <p>See what our customers say about Mash Watches – crafted for elegance, precision, and timeless style.</p>
 
@@ -328,21 +301,24 @@
       <!-- Review 1 -->
       <div class="review-card">
         <div class="stars">★★★★★</div>
-        <p>“The detailing on my Classic Black watch is outstanding. It feels luxurious yet minimal – worth every rupee!”</p>
+        <p>“The detailing on my Classic Black watch is outstanding. It feels luxurious yet minimal – worth every rupee!”
+        </p>
         <span class="reviewer">Ahmed Khan</span>
       </div>
 
       <!-- Review 2 -->
       <div class="review-card">
         <div class="stars">★★★★</div>
-        <p>“I purchased the Luna Edition. The design is sleek, lightweight, and matches both formal and casual wear perfectly.”</p>
+        <p>“I purchased the Luna Edition. The design is sleek, lightweight, and matches both formal and casual wear
+          perfectly.”</p>
         <span class="reviewer">Sarah Malik</span>
       </div>
 
       <!-- Review 3 -->
       <div class="review-card">
         <div class="stars">★★★★★</div>
-        <p>“Amazing service and fast delivery. The watch quality is premium, feels just like high-end international brands.”</p>
+        <p>“Amazing service and fast delivery. The watch quality is premium, feels just like high-end international
+          brands.”</p>
         <span class="reviewer">Hassan Raza</span>
       </div>
     </div>
@@ -358,21 +334,25 @@
     <div class="news-grid">
       <!-- blog 1 -->
       <div class="news-card">
-        <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2021/05/apple-watch-first-gen-renders.jpg" alt="Luxury Watch">
+        <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2021/05/apple-watch-first-gen-renders.jpg"
+          alt="Luxury Watch">
         <div class="news-content">
           <div class="news-meta">COLLECTION — 10 Sep 2025</div>
           <h3>Introducing The Luna Series</h3>
-          <p>Experience timeless elegance with our brand-new Luna Series – crafted with precision for those who value class and durability.</p>
+          <p>Experience timeless elegance with our brand-new Luna Series – crafted with precision for those who value
+            class and durability.</p>
         </div>
       </div>
 
       <!-- blog 2 -->
       <div class="news-card">
-        <img src="https://i.pcmag.com/imagery/lineups/01G8FEQIWosBgByduVIL7vQ-1.fit_lim.size_1200x630.v1571102408.jpg" alt="Fashion Watch">
+        <img src="https://i.pcmag.com/imagery/lineups/01G8FEQIWosBgByduVIL7vQ-1.fit_lim.size_1200x630.v1571102408.jpg"
+          alt="Fashion Watch">
         <div class="news-content">
           <div class="news-meta">FASHION — 05 Sep 2025</div>
           <h3>Top 5 Watches For Every Occasion</h3>
-          <p>From business meetings to evening dinners, discover our selection of versatile watches that blend style with performance.</p>
+          <p>From business meetings to evening dinners, discover our selection of versatile watches that blend style
+            with performance.</p>
         </div>
       </div>
 
@@ -382,13 +362,14 @@
         <div class="news-content">
           <div class="news-meta">STYLE — 01 Sep 2025</div>
           <h3>Why Mash Watches Define Luxury</h3>
-          <p>Crafted with precision and designed with elegance, our watches stand out as a true symbol of sophistication and success.</p>
+          <p>Crafted with precision and designed with elegance, our watches stand out as a true symbol of sophistication
+            and success.</p>
         </div>
       </div>
     </div>
   </section>
 
-   
+
 
 
   <!-- PREFOOTER -->
@@ -404,7 +385,8 @@
           <input type="email" placeholder="Enter your email address" required>
           <button type="submit">Subscribe</button>
         </form>
-        <small>By subscribing you agree to our <a href="#" style="color:#fff; text-decoration:underline;">Terms & Conditions</a> and <a href="#" style="color:#fff; text-decoration:underline;">Privacy Policy</a>.</small>
+        <small>By subscribing you agree to our <a href="#" style="color:#fff; text-decoration:underline;">Terms &
+            Conditions</a> and <a href="#" style="color:#fff; text-decoration:underline;">Privacy Policy</a>.</small>
       </div>
 
       <!-- Help + App Downloads -->
@@ -413,21 +395,18 @@
         <p>We are available 24/7. Place Your Order Anytime.</p>
         <div class="app-buttons">
           <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+            alt="Google Play">
         </div>
       </div>
 
     </div>
   </section>
-<!-- Footer -->
+  <!-- Footer -->
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-left">
-        <img
-          src="./images/logo.jpg"
-          alt="Company Logo"
-          class="footer-logo"
-        />
+        <img src="./images/logo2.png" alt="Company Logo" class="footer-logo" />
         <p class="footer-description">
           Our store is dedicated to offering the best watches worldwide,
           focusing on quality and customer satisfaction.
