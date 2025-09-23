@@ -9,22 +9,18 @@ body {
 
 /* HEADER */
 header {
-  background:  #288fb4;
-  color: #fff;
+  background: white;
+  color: #0b0a0a;
   padding: 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.logo-title {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+  border-bottom: 2px solid #92140c;
 }
 
 .logo {
-  height: 40px;
+  height: 50px;
+  width: 150px;
 }
 
 header h1 {
@@ -36,7 +32,7 @@ header h1 {
 
 /* White button for Continue Shopping */
 .btn-white {
-  background:  #288fb4;
+  background: #92140c;
   color: #f9f8f9;
   padding: 8px 16px;
   border-radius: 6px;
@@ -48,7 +44,7 @@ header h1 {
 
 .btn-white:hover {
   background: transparent;
-  color: #47043b;
+  color: #92140c;
   border-color: #fff;
 }
 
@@ -67,7 +63,7 @@ header h1 {
   background: #fff;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 #cart-items h2 {
@@ -105,7 +101,7 @@ header h1 {
 .cart-item p {
   margin: 5px 0;
   font-weight: bold;
-  color:  #288fb4;
+  color: #92140c;
 }
 
 .cart-item .quantity {
@@ -116,7 +112,7 @@ header h1 {
 }
 
 .cart-item .quantity button {
-  background:  #288fb4;
+  background: #92140c;
   color: #fff;
   border: none;
   padding: 5px 10px;
@@ -127,7 +123,7 @@ header h1 {
 
 .cart-item button {
   background: transparent;
-  color: red;
+  color: black;
   border: none;
   cursor: pointer;
   font-size: 14px;
@@ -139,16 +135,17 @@ header h1 {
   background: #fff;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.cart-summary h2, .cart-summary h3 {
+.cart-summary h2,
+.cart-summary h3 {
   margin: 10px 0;
   font-weight: 700;
 }
 
 .cart-summary input {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 6px;
@@ -157,7 +154,7 @@ header h1 {
 
 .cart-summary button {
   width: 100%;
-  background:  #288fb4;
+  background: #92140c;
   color: #fff;
   border: none;
   padding: 12px;
@@ -169,11 +166,33 @@ header h1 {
 }
 
 .cart-summary button:hover {
-  background: #600060;
+  background: #92140c;
 }
 
 .cart-summary form input {
   margin-bottom: 10px;
+}
+
+/* Toast notification */
+#toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: #92140c;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 10000;
+  pointer-events: none;
+}
+
+#toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
 }
 
 /* Responsive */
@@ -200,12 +219,12 @@ header h1 {
   background: #fff;
   margin: 30px auto;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   max-width: 600px;
 }
 
 #order-confirmation h1 {
-  color:  #288fb4;
+  color: #92140c;
   font-size: 28px;
   margin-bottom: 10px;
 }
@@ -221,5 +240,5 @@ header h1 {
 .order-details h2 {
   margin-top: 0;
   font-size: 20px;
-  color:  #288fb4;
+  color: #92140c;
 }

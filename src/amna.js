@@ -1,32 +1,32 @@
 function toggleMenu() {
-    document.querySelector("nav ul").classList.toggle("active");
-  }
-  // Full width section with youtube link
-   function openVideo() {
-      window.open("https://www.youtube.com/watch?v=hJZ68qhqbIE", "_blank"); 
-      // replace with your Mash Watches YouTube link
-    }
+  document.querySelector("nav ul").classList.toggle("active");
+}
+// Full width section with youtube link
+function openVideo() {
+  window.open("https://www.youtube.com/watch?v=hJZ68qhqbIE", "_blank");
+  // replace with your Mash Watches YouTube link
+}
 let currentSlide = 0;
-    const slides = document.getElementById('slides');
-    const totalSlides = slides.children.length;
-    const slideWidth = slides.children[0].clientWidth;
+const slides = document.getElementById('slides');
+const totalSlides = slides.children.length;
+const slideWidth = slides.children[0].clientWidth;
 
-    function updateSlidePosition() {
-   slides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-    }
-    function nextSlide() {
-      currentSlide = (currentSlide + 1) % totalSlides;
-      updateSlidePosition();
-    }
-    function prevSlide() {
-      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-      updateSlidePosition();
-    }
-    setInterval(nextSlide, 8000); // Auto-slide every 5 seconds
-    window.addEventListener('resize', () => {
-      updateSlidePosition();
-    });
-    updateSlidePosition();
+function updateSlidePosition() {
+  slides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+}
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % totalSlides;
+  updateSlidePosition();
+}
+function prevSlide() {
+  currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+  updateSlidePosition();
+}
+setInterval(nextSlide, 8000); // Auto-slide every 5 seconds
+window.addEventListener('resize', () => {
+  updateSlidePosition();
+});
+updateSlidePosition();
 
 
 const productList = document.getElementById("product-list");
@@ -58,9 +58,11 @@ function displayProducts(products) {
   products.forEach(product => {
     const card = document.createElement("div");
     card.className = "product-card";
-
-   card.innerHTML = `
-  <img src="${product.imgUrl}" alt="${product.name}" onclick="openProductPage(${product.id})">
+    card.innerHTML = `
+  <div class="image-container">
+    <img src="${product.imgUrl}" alt="${product.name}" onclick="openProductPage(${product.id})">
+    ${product.rating ? `<div class="rating-badge">⭐ ${product.rating.toFixed(2)}</div>` : ""}
+  </div>
   <div class="info">
     <h3>${product.name}</h3>
     <p>$${product.price}</p>
@@ -137,7 +139,7 @@ function showToast(message) {
   toast.style.position = "fixed";
   toast.style.bottom = "20px";
   toast.style.right = "20px";
-  toast.style.background = "#800080";
+  toast.style.background = "#92140c";
   toast.style.color = "#fff";
   toast.style.padding = "10px 20px";
   toast.style.borderRadius = "8px";
