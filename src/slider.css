@@ -1,0 +1,97 @@
+/* Container for slider */
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 40px auto;
+  overflow: hidden;
+}
+
+/* Slider viewport */
+.slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Track that moves */
+.slider-track {
+  display: flex;
+  gap: 20px; /* Space between slides */
+  transition: transform 0.4s ease-in-out;
+  align-items: flex-start;
+}
+
+/* Each slide as card */
+.slide {
+  width: 250px;
+  flex-shrink: 0;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect on slide */
+.slide:hover {
+  transform: translateY(-5px);
+}
+
+/* Image inside slide */
+.slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Caption below image */
+.slide-caption {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  text-transform: capitalize;
+}
+
+/* Arrow buttons */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: black; /* Purple shade */
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.arrow:hover {
+  background: white;
+  color: white;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+/* Responsive: show 1 slide on smaller screens */
+@media (max-width: 768px) {
+  .slide {
+    width: 90vw; /* almost full width on mobile */
+  }
+  .slider-track {
+    gap: 15px;
+  }
+}
