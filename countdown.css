@@ -1,0 +1,249 @@
+  body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: white;
+            color: white;
+        }
+
+        .product-showcase {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background: white;
+        }
+
+        /* Left side - Product image */
+        .product-image-section {
+            /* display: flex; */
+            /* align-items: center; */
+            /* justify-content: center; */
+            /* padding: 2rem; */
+            /* position: relative; */
+            /* border: 2px solid red; */
+            /* background: white; */
+            height: 100vh;
+        }
+
+        .product-image-section img{
+            width: 100%;
+            height: 100%;
+            object-fit: inherit;
+            object-position: center;
+        }
+
+       
+        /* Right side - Product details */
+        .product-details-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 4rem 3rem;
+            background: white;
+        }
+
+        .deal-badge {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #6c757d;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            color: #800080;
+        }
+
+        .product-title {
+            font-size: 2.57rem;
+            font-weight: 300;
+            color: #212529;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+            color: #800080;
+
+        }
+
+        .product-description {
+            font-size: 1rem;
+            color: #6c757d;
+            line-height: 1.6;
+            margin-bottom: 3rem;
+            max-width: 400px;
+        }
+
+        /* Countdown Timer */
+        .countdown-section {
+            margin-bottom: 3rem;
+        }
+
+        .countdown-timer {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .time-unit {
+            text-align: center;
+        }
+
+        .time-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #212529;
+            display: block;
+            line-height: 1;
+        }
+
+        .time-label {
+            font-size: 0.75rem;
+            color: #6c757d;
+            font-weight: 500;
+            margin-top: 0.25rem;
+            text-transform: lowercase;
+        }
+
+        .time-separator {
+            font-size: 2rem;
+            color: #6c757d;
+            font-weight: 300;
+            margin: 0 0.5rem;
+        }
+
+        /* Shop Now Button */
+        .shop-button {
+            background: #212529;
+            color: white;
+            border: none;
+            padding: 1rem 2.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 0;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: all 0.3s ease;
+            align-self: flex-start;
+            margin-bottom: 3rem;
+            background-color: #800080;
+        }
+
+        .shop-button:hover {
+            background: #fa04fa;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Limited offer notice */
+        .offer-notice {
+            font-size: 0.875rem;
+            color: #6c757d;
+            line-height: 1.5;
+        }
+
+        .offer-notice .highlight {
+            background: plum;
+            padding: 0.25rem 0.5rem;
+            border-radius: 3px;
+            font-weight: 600;
+            color: #800080;
+        }
+
+        .hurry-up {
+            color: #800080;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .product-showcase {
+                grid-template-columns: 1fr;
+            }
+
+            .product-image-section {
+                order: 1;
+                padding: 1.5rem;
+            }
+
+            .product-details-section {
+                order: 2;
+                padding: 2rem 1.5rem;
+            }
+
+            .watch-container {
+                height: 400px;
+            }
+
+            .watch-svg {
+                width: 250px;
+                height: 250px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .product-title {
+                font-size: 2rem;
+            }
+
+            .countdown-timer {
+                gap: 1rem;
+            }
+
+            .time-number {
+                font-size: 2rem;
+            }
+
+            .time-separator {
+                font-size: 1.5rem;
+            }
+
+            .product-details-section {
+                padding: 2rem 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-title {
+                font-size: 1.75rem;
+            }
+
+            .countdown-timer {
+                gap: 0.75rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .time-number {
+                font-size: 1.75rem;
+            }
+
+            .shop-button {
+                width: 100%;
+                text-align: center;
+
+            }
+
+            .watch-container {
+                height: 350px;
+            }
+        }
+
+        /* Animation for countdown numbers */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .time-number.update {
+            animation: pulse 0.3s ease-in-out;
+        }
