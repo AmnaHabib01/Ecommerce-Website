@@ -6,14 +6,14 @@
 }
 
 .top-strip {
-  background:purple;
+  background:#92140c;
   color: #fff;
   text-align: center;
   padding: 8px;
   font-size: 14px;
 }
 .top-strip a {
-  color: #ffc2ff;
+  color:#ffcf99;
   font-weight: bold;
   text-decoration: none;
 }
@@ -33,14 +33,14 @@
   margin-right: 15px;
 }
 .top-bar a {
-  color: #800080;
+  color:#14213d;
   text-decoration: none;
 }
 .top-bar .right select {
   margin-left: 15px;
   font-size: 14px;
-  border: 1px solid #800080;
-  color: #800080;
+  border: 1px solid #92140c;
+  color: #92140c;
   background: #fff;
   padding: 4px 6px;
 }
@@ -59,7 +59,7 @@ header {
   color: #800080;
 }
 .logo img {
-  height: 40px;
+  height: 60px;
 }
 .search-box {
   display: flex;
@@ -69,17 +69,17 @@ header {
 .search-box input {
   flex: 1;
   padding: 10px;
-  border: 1px solid #800080;
+  border: 1px solid #92140c;
 }
 .search-box select {
   padding: 10px;
-  border: 1px solid #800080;
-  color: #800080;
+  border: 1px solid #92140c;
+  color:#92140c;
 }
 .icons span {
   margin-left: 15px;
   font-size: 16px;
-  color: #800080;
+  color: #92140c;
   cursor: pointer;
 }
 
@@ -99,7 +99,7 @@ header {
   display: block;
   height: 3px;
   width: 100%;
-  background: #800080;
+  background: #92140c;
   border-radius: 3px;
   transition: 0.3s;
 }
@@ -151,11 +151,11 @@ nav ul li a {
   transition: color 0.3s;
 }
 nav ul li a:hover {
-  color: #800080;
-  text-decoration: 2px purple underline ;
+  color: #92140c;
+  text-decoration: 2px #92140c underline ;
   text-underline-offset: 6px;
   text-decoration-thickness: 2px;
-  text-decoration-color: purple;
+  text-decoration-color: #92140c;
   font-weight: 600;
 
 }
@@ -179,7 +179,7 @@ nav ul li a:hover {
   color: #000;
 }
 .sidebar .count {
-  background: #800080;
+  background: #92140c;
   color: white;
   padding: 3px 6px;
   font-size: 12px;
@@ -214,7 +214,7 @@ nav ul li a:hover {
   margin-left: 5px;
   color: #fff;
 }
-.hot { background: #800080; }
+.hot { background: #92140c; }
 .new { background: #000; }
 
 /* Hero Section */
@@ -329,7 +329,7 @@ nav ul li a:hover {
     .btn-shop {
       display: inline-block;
       padding: 10px 20px;
-      background: #800080;
+      background: #92140c;
       border: none;
       color: white;
       text-decoration: none;
@@ -337,7 +337,7 @@ nav ul li a:hover {
       font-weight: bold;
     }
     .btn-shop:hover {
-      background: #5a005a;
+      background: #92140c;
     }
 
     
@@ -370,7 +370,7 @@ nav ul li a:hover {
       position: absolute;
       top: 0; left: 0;
       width: 100%; height: 100%;
-      background: rgba(188, 99, 247, 0.5);
+      /* background: rgba(234, 116, 48, 0.5); */
       border-radius: 10px;
     }
 
@@ -400,7 +400,7 @@ nav ul li a:hover {
 
     .watch-card button {
       padding: 10px 20px;
-      background: purple;
+      background: #92140c;
       border: none;
       border-radius: 5px;
       color: #fff;
@@ -415,7 +415,7 @@ nav ul li a:hover {
 
     /* Background images */
     .mens-watch {
-      background-image: url("https://i0.wp.com/watchcentre.pk/wp-content/uploads/2022/04/qq-ladies-wrist-watches-banner.jpg?fit=800%2C400&ssl=1"); 
+  background-image: url("https://i0.wp.com/watchcentre.pk/wp-content/uploads/2022/04/casio-ladies-wrist-watches-banner.jpg?fit=800%2C400&ssl=1");
 
     }
 
@@ -479,7 +479,7 @@ nav ul li a:hover {
     .newsletter button {
       padding: 12px 20px;
       border: none;
-      background:purple;
+      background:#92140c;
       color: #fff;
       cursor: pointer;
       border-radius: 0 4px 4px 0;
@@ -552,7 +552,7 @@ nav ul li a:hover {
     .reviews-section h2 {
       font-size: 2rem;
       font-weight: 700;
-      color: #540274; /* Dark Purple */
+      color: #92140c; /* Dark Purple */
       margin-bottom: 10px;
     }
 
@@ -588,7 +588,7 @@ nav ul li a:hover {
     }
 
     .stars {
-      color: #8e24aa; /* Purple stars */
+      color: #92140c; /* Purple stars */
       font-size: 1.2rem;
       margin-bottom: 15px;
     }
@@ -626,7 +626,7 @@ nav ul li a:hover {
     .news-section h2 {
        font-size: 2rem;
       font-weight: 700;
-      color: #540274; /* Dark Purple */
+      color: #92140c; /* Dark Purple */
       margin-bottom: 10px;
     }
 
@@ -745,7 +745,7 @@ nav ul li a:hover {
       font-size: 1.5rem;
       font-weight: 400;
       margin-bottom: 30px;
-      color: #d1c4e9;
+      color: #92140c;
     }
 
     .vision-btn {
@@ -761,8 +761,8 @@ nav ul li a:hover {
     }
 
     .vision-btn:hover {
-      background: #8e24aa;
-      border-color: #8e24aa;
+      background: #92140c;
+      border-color: #92140c;
     }
 
     @media (max-width: 768px) {

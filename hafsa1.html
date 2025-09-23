@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MASH WATCHES</title>
+  <link rel="stylesheet" href="src/hafsa1.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Top darkred Strip -->
+  <div class="top-strip">
+    <span>EXCLUSIVE WATCH SALE – UP TO 40% OFF + FREE WORLDWIDE SHIPPING!
+      <a href="#">SHOP NOW</a>
+    </span>
+  </div>
+
+
+  <!-- Social + Shipping Bar -->
+  <div class="top-bar">
+    <div class="left">
+      <span>⌚ 3.1M Watch Lovers</span>
+      <span>Free Shipping on all luxury watches above Rs 10000. <a href="#">Explore Now.</a></span>
+    </div>
+    <div class="right">
+      <a href="#">Order Tracking</a>
+      <select>
+        <option>English</option>
+        <option>Urdu</option>
+      </select>
+      <select>
+        <option>USD</option>
+        <option>PKR</option>
+      </select>
+    </div>
+  </div>
+
+
+  <!-- Header -->
+  <header>
+    <div class="logo"><a href="#"><img src="Hafsaimages/logos.png"></a></div>
+    <div class="search-box">
+      <input type="text" placeholder="Search your favorite watch...">
+      <select>
+        <option>Select Category</option>
+        <option>Men Watches</option>
+        <option>Women Watches</option>
+        <option>Smart Watches</option>
+        <option>Luxury Watches</option>
+      </select>
+    </div>
+    <div class="icons">
+      
+      
+      <a href="cart.html" class="cart-link">
+        <div class="cart-icon">
+          <img src="Hafsaimages/shopping-bag.png" alt="Cart" class="cart-img">
+          <span id="cart-count" class="cart-badge" style="color: wheat;">0</span>
+        </div>
+     </a>
+
+    </div>
+  </header>
+
+
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">ALL WATCHES</a></li>
+      <li><a href="#">MEN</a></li>
+      <li><a href="#">WOMEN</a></li>
+      <li><a href="#">SMART</a></li>
+      <li><a href="#">LUXURY</a></li>
+      <li><a href="#">BLOG</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+
+  <!-- Sidebar + Hero -->
+  <section class="main-section">
+    <aside class="sidebar">
+      <h4>Watch Categories <span class="count">48</span></h4>
+      <ul>
+        <li>Men’s Watches</li>
+        <li>Women’s Watches</li>
+        <li>Smart Watches <span class="tag hot">HOT</span></li>
+        <li>Luxury Watches</li>
+        <li>Chronograph</li>
+        <li>Automatic</li>
+        <li>Digital</li>
+        <li>Classic Leather</li>
+        <li>Metal Straps <span class="tag new">NEW</span></li>
+        <li>Sports Watches</li>
+      </ul>
+    </aside>
+
+    <div class="slider">
+      <div class="slides" id="slides">
+       <img src="Hafsaimages/watch-01.jpg" alt="Luxury Watches">
+        <img src="Hafsaimages/watch02.png" alt="Smart Watches">
+        <img src="Hafsaimages/watch03.jpg" alt="Classic Watches">
+      </div>
+
+      <div class="hero-text">
+         <h2>Luxury Timepieces</h2>
+            <p>Crafted with precision, made for elegance.</p>
+            <button class="shop-now">Shop Now</button>
+      </div>
+
+      
+      <button class="prev" onclick="prevSlide()">❮</button>
+      <button class="next" onclick="nextSlide()">❯</button>
+    </div>
+  </section>
+  <!-- delivery option -->
+
+  <div class="container">
+    <div class="features-section">
+      <div class="features-grid">
+        <!-- Free Shipping -->
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg class="icon-shipping" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.5">
+              <rect x="1" y="3" width="15" height="13"></rect>
+              <polygon points="16,6 16,16 21,16 21,11 16,6"></polygon>
+              <circle cx="5.5" cy="18.5" r="2.5"></circle>
+              <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              <path d="M7 8h6"></path>
+              <path d="M7 11h4"></path>
+            </svg>
+          </div>
+          <div class="feature-content">
+            <h3 class="feature-title">Free Shipping</h3>
+            <p class="feature-description">Free Shipping for orders over $130.</p>
+          </div>
+        </div>
+
+        <!-- Money Guarantee -->
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg class="icon-guarantee" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <path d="m9 12 2 2 4-4"></path>
+            </svg>
+          </div>
+          <div class="feature-content">
+            <h3 class="feature-title">Money Guarantee</h3>
+            <p class="feature-description">Within 30 days for an exchange.</p>
+          </div>
+        </div>
+
+        <!-- Online Support -->
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg class="icon-support" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.5">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+          </div>
+          <div class="feature-content">
+            <h3 class="feature-title">Online Support</h3>
+            <p class="feature-description">Available 24/7 for your help.</p>
+          </div>
+        </div>
+
+        <!-- Flexible Payment -->
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg class="icon-payment" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.5">
+              <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+              <line x1="1" y1="10" x2="23" y2="10"></line>
+              <rect x="3" y="14" width="4" height="2"></rect>
+              <rect x="9" y="14" width="6" height="2"></rect>
+            </svg>
+          </div>
+          <div class="feature-content">
+            <h3 class="feature-title">Flexible Payment</h3>
+            <p class="feature-description">Pay with Multiple Credit Cards.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- card section -->
+  <section id="product-list" class="product-grid">
+    <!-- Products will load here dynamically -->
+  </section>
+  <!-- Banner full width -->
+
+   <section class="vision-banner">
+    <!-- Background video -->
+    <video autoplay muted loop playsinline>
+      <source src="./images/watches.mp4" type="video/mp4">
+      <!-- Add a fallback message -->
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="vision-content">
+      <h1>Vision 2025</h1>
+      <h2>Redefining Luxury Timepieces with Mash Watches</h2>
+      <button class="vision-btn" onclick="openVideo()">Watch Video</button>
+    </div>
+  </section>
+  <!-- Grid 1: Men's & Women's Collection side by side -->
+  <div class="watch-collection grid-1">
+    <div class="watch-card mens-watch">
+      <h3>Men’s Collection</h3>
+      <h1>Luxury Timepieces</h1>
+      <p>Bold, powerful designs built for confidence and style.</p>
+      <button>Shop Men →</button>
+    </div>
+
+    <div class="watch-card womens-watch">
+      <h3>Women’s Collection</h3>
+      <h1>Elegant Watches</h1>
+      <p>Graceful designs crafted to complement every occasion.</p>
+      <button>Shop Women →</button>
+    </div>
+  </div>
+
+  <!-- Category Slider Container -->
+  <div class="slider-wrapper category-slider-wrapper">
+    <button class="arrow arrow-left" id="prevBtn">&#10094;</button>
+
+    <div class="slider-viewport">
+      <div class="slider-grid" id="sliderGrid">
+        <!-- Slide Cards Start -->
+        <div class="slide">
+          <div class="slide-image">
+            <img
+              src="https://zerolifestyle.co/cdn/shop/files/STRAP01.webp?v=1754740631&width=1300"
+              alt="Watch 1"
+            />
+          </div>
+          <div class="slide-caption">Strap 01</div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-image">
+            <img
+              src="https://zerolifestyle.co/cdn/shop/files/Black_4_c986e7b0-a61c-41d3-a8ce-4a469882bade.webp?v=1752432598&width=1200"
+              alt="Watch 2"
+            />
+          </div>
+          <div class="slide-caption">Black Leather</div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-image">
+            <img
+              src="https://zerolifestyle.co/cdn/shop/files/lunar_Green-Leather_1.webp?v=1756987036&width=1200"
+              alt="Watch 3"
+            />
+          </div>
+          <div class="slide-caption">Lunar Green</div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-image">
+            <img
+              src="https://zerolifestyle.co/cdn/shop/files/1_ee8ac544-ead9-49a7-84c0-9f8c4a75d15d.webp?v=1756127463&width=1300"
+              alt="Watch 4"
+            />
+          </div>
+          <div class="slide-caption">Elegant Brown</div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-image">
+            <img
+              src="https://zerolifestyle.co/cdn/shop/files/01_fdba08f1-6dfb-44a1-bfe7-462b8adc9d5b.webp?v=1734678583&width=1300"
+              alt="Watch 5"
+            />
+          </div>
+          <div class="slide-caption">Modern Steel</div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-image">
+            <img
+              src="https://zerolifestyle.co/cdn/shop/files/ICON-Magenta-2.webp?v=1752499934&width=1300"
+              alt="Watch 6"
+            />
+          </div>
+          <div class="slide-caption">Icon Magenta</div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-image">
+            <img
+              src="https://zerolifestyle.co/cdn/shop/files/ICON-Silver-2.webp?v=1755342500&width=1300"
+              alt="Watch 7"
+            />
+          </div>
+          <div class="slide-caption">Royale Silver</div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-image">
+            <img
+              src="https://zerolifestyle.co/cdn/shop/files/01_fdba08f1-6dfb-44a1-bfe7-462b8adc9d5b.webp?v=1734678583&width=1300"
+              alt="Watch 8"
+            />
+          </div>
+          <div class="slide-caption">Layer G</div>
+        </div>
+        <!-- Slide Cards End -->
+      </div>
+    </div>
+
+    <button class="arrow arrow-right" id="nextBtn">&#10095;</button>
+  </div>
+  <!-- Review Section -->
+
+    <section class="reviews-section">
+    <h2>Latest Buyers Reviews</h2>
+    <p>See what our customers say about Mash Watches – crafted for elegance, precision, and timeless style.</p>
+
+    <div class="reviews-grid">
+      <!-- Review 1 -->
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>“The detailing on my Classic Black watch is outstanding. It feels luxurious yet minimal – worth every rupee!”</p>
+        <span class="reviewer">Ahmed Khan</span>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="review-card">
+        <div class="stars">★★★★</div>
+        <p>“I purchased the Luna Edition. The design is sleek, lightweight, and matches both formal and casual wear perfectly.”</p>
+        <span class="reviewer">Sarah Malik</span>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>“Amazing service and fast delivery. The watch quality is premium, feels just like high-end international brands.”</p>
+        <span class="reviewer">Hassan Raza</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Blogs Section -->
+
+  <section class="news-section">
+    <h2>Our Latest News</h2>
+    <p>Stay updated with the latest trends, stories, and releases from Mash Watches – where time meets elegance.</p>
+
+    <div class="news-grid">
+      <!-- blog 1 -->
+      <div class="news-card">
+        <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2021/05/apple-watch-first-gen-renders.jpg" alt="Luxury Watch">
+        <div class="news-content">
+          <div class="news-meta">COLLECTION — 10 Sep 2025</div>
+          <h3>Introducing The Luna Series</h3>
+          <p>Experience timeless elegance with our brand-new Luna Series – crafted with precision for those who value class and durability.</p>
+        </div>
+      </div>
+
+      <!-- blog 2 -->
+      <div class="news-card">
+        <img src="https://i.pcmag.com/imagery/lineups/01G8FEQIWosBgByduVIL7vQ-1.fit_lim.size_1200x630.v1571102408.jpg" alt="Fashion Watch">
+        <div class="news-content">
+          <div class="news-meta">FASHION — 05 Sep 2025</div>
+          <h3>Top 5 Watches For Every Occasion</h3>
+          <p>From business meetings to evening dinners, discover our selection of versatile watches that blend style with performance.</p>
+        </div>
+      </div>
+
+      <!-- blog 3 -->
+      <div class="news-card">
+        <img src="https://shop.gadgetgogo.co.uk/wp-content/uploads/2021/07/music-apple-watch.jpg" alt="Men’s Watch">
+        <div class="news-content">
+          <div class="news-meta">STYLE — 01 Sep 2025</div>
+          <h3>Why Mash Watches Define Luxury</h3>
+          <p>Crafted with precision and designed with elegance, our watches stand out as a true symbol of sophistication and success.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   
+
+
+  <!-- PREFOOTER -->
+
+  <section class="prefooter">
+    <div class="prefooter-container">
+
+      <!-- Newsletter -->
+      <div class="newsletter">
+        <h2>Get our emails for info on new watches, sales & more.</h2>
+        <p>We’ll email you a voucher worth Rs.5000 off your first order over Rs.15000.</p>
+        <form>
+          <input type="email" placeholder="Enter your email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+        <small>By subscribing you agree to our <a href="#" style="color:#fff; text-decoration:underline;">Terms & Conditions</a> and <a href="#" style="color:#fff; text-decoration:underline;">Privacy Policy</a>.</small>
+      </div>
+
+      <!-- Help + App Downloads -->
+      <div class="help">
+        <h3>Need help?<br>(+800) 1234 5678 90</h3>
+        <p>We are available 24/7. Place Your Order Anytime.</p>
+        <div class="app-buttons">
+          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+        </div>
+      </div>
+
+    </div>
+  </section>
+<!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <img
+          src="./images/logo.jpg"
+          alt="Company Logo"
+          class="footer-logo"
+        />
+        <p class="footer-description">
+          Our store is dedicated to offering the best watches worldwide,
+          focusing on quality and customer satisfaction.
+        </p>
+      </div>
+      <div class="footer-center">
+        <div class="footer-column">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="#">Shop Men</a></li>
+            <li><a href="#">Shop Women</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Best Sellers</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>About</h3>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="src/hafsa1.js" defer></script>
+</body>
+
+</html>
