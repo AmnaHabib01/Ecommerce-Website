@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <link rel="stylesheet" href="./src/product.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="image-box">
+      <img id="main-img" src="" alt="Product Image">
+    </div>
+
+    <div class="details">
+      <h1 id="product-name"></h1>
+
+      <div class="price" id="product-price-box"></div>
+
+      <div id="product-rating"></div>
+      <p class="meta">Category: <span id="product-category"></span></p>
+      <p id="product-desc"></p>
+      <p id="product-stock"></p>
+      <p id="product-discount"></p>
+
+      <!-- Quantity Selector -->
+      <div class="quantity">
+        <button onclick="changeQty(-1)">-</button>
+        <span id="product-qty">1</span>
+        <button onclick="changeQty(1)">+</button>
+      </div>
+
+      <button class="add-btn" onclick="addToCart()">Add to Cart</button>
+      <button class="checkout-btn" onclick="window.location.href='cartt.html'">Go to Checkout</button>
+      <button class="back-btn" onclick="window.location.href='hafsa.html'">← Continue Shopping</button>
+
+      <!-- Feature Cards -->
+      <div class="features">
+        <div class="feature-box">
+          <h3>1 Year</h3>
+          <p>Warranty</p>
+        </div>
+        <div class="feature-box">
+          <h3>Free</h3>
+          <p>Shipping</p>
+        </div>
+        <div class="feature-box">
+          <h3>1M+</h3>
+          <p>Customers</p>
+        </div>
+        <div class="feature-box">
+          <h3>7 Days</h3>
+          <p>Replacement</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./src/product.js"></script>
+</body>
+
+</html>
