@@ -5,8 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MASH WATCHES</title>
+<<<<<<<< HEAD:hafsa.html
   <link rel="stylesheet" href="src/hafsa.css">
+========
+  <link rel="stylesheet" href="src/index.css">
+>>>>>>>> 83b16a9edf75df256f3e8fcd952c8a3bda8a203c:index.html
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 </head>
 
 <body>
@@ -17,29 +22,43 @@
     </span>
   </div>
 
+<<<<<<<< HEAD:hafsa.html
 
   <!-- Social + top Bar -->
+========
+  <!-- Social + Shipping Bar -->
+>>>>>>>> 83b16a9edf75df256f3e8fcd952c8a3bda8a203c:index.html
   <div class="top-bar">
     <div class="left">
       <span>⌚ 3.1M Watch Lovers</span>
-      <span>Save 10% with a discount coupon on all orders.Shop now<a href="#product-list">Explore Now.</a></span>
+      <span>
+        Save 10% with a discount coupon on all orders. Shop now
+        <a href="#product-list">Explore Now.</a>
+      </span>
     </div>
-    <div class="right">
-      <select>
-        <option>English</option>
-        <option>Urdu</option>
-      </select>
-      <select>
-        <option>USD</option>
-        <option>PKR</option>
-      </select>
+    <div class="right social-icons">
+      <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+        <span><i class="fab fa-facebook-f"></i></span>
+      </a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+        <span><i class="fab fa-instagram"></i></span>
+      </a>
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <span><i class="fab fa-linkedin-in"></i></span>
+      </a>
+      <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
+        <span><i class="fab fa-youtube"></i></span>
+      </a>
     </div>
   </div>
 
-
   <!-- Header -->
   <header>
+<<<<<<<< HEAD:hafsa.html
     <div class="logo"><a href="hafsa.html"><img src="./images/logo2.png"></a></div>
+========
+    <div class="logo"><a href="index.html"><img src="./images/logo2.png"></a></div>
+>>>>>>>> 83b16a9edf75df256f3e8fcd952c8a3bda8a203c:index.html
     <div class="search-box">
       <input type="text" placeholder="Search your favorite watch...">
       <select>
@@ -48,22 +67,30 @@
         <option>Women Watches</option>
         <option>Smart Watches</option>
         <option>Luxury Watches</option>
+        <option>Automatic Watches</option>
+        <option>Digital Watches</option>
+        <option>Classic Leather</option>
+        <option>Metal Strap Watches</option>
+        <option>Sports Watches</option>
+        <option>Diving Watches</option>
       </select>
     </div>
     <div class="icons">
+<<<<<<<< HEAD:hafsa.html
 
       <a href="cartt.html" class="cart-link">
+========
+      <a href="cart1.html" class="cart-link">
+>>>>>>>> 83b16a9edf75df256f3e8fcd952c8a3bda8a203c:index.html
         <div class="cart-icon">
           <img src="./images/shopping-bag (1).png" alt="Cart" class="cart-img">
           <span id="cart-count" class="cart-badge" style="color: wheat;">0</span>
         </div>
       </a>
-
     </div>
   </header>
-
-
   <!-- Navbar -->
+<<<<<<<< HEAD:hafsa.html
  <nav>
   <ul>
     <li><a href="hafsa.html">HOME</a></li>
@@ -78,30 +105,46 @@
 </nav>
 
 
+========
+  <nav>
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="category1.html?category=all">ALL WATCHES</a></li>
+      <li><a href="category1.html?category=men">MEN</a></li>
+      <li><a href="category1.html?category=women">WOMEN</a></li>
+      <li><a href="category1.html?category=smart">SMART</a></li>
+      <li><a href="category1.html?category=luxury">LUXURY</a></li>
+      <li><a href="blogs.html">BLOG</a></li>
+      <li><a href="contactt.html">CONTACT</a></li>
+    </ul>
+  </nav>
+>>>>>>>> 83b16a9edf75df256f3e8fcd952c8a3bda8a203c:index.html
   <div class="hamburger" onclick="toggleMenu()">
     <span></span>
     <span></span>
     <span></span>
   </div>
 
-
   <!-- Sidebar + Hero -->
   <section class="main-section">
     <aside class="sidebar">
       <h4>Watch Categories <span class="count">48</span></h4>
       <ul>
-        <li>Men’s Watches</li>
-        <li>Women’s Watches</li>
-        <li>Smart Watches <span class="tag hot">HOT</span></li>
-        <li>Luxury Watches</li>
-        <li>Chronograph</li>
-        <li>Automatic</li>
-        <li>Digital</li>
-        <li>Classic Leather</li>
-        <li>Metal Straps <span class="tag new">NEW</span></li>
-        <li>Sports Watches</li>
+        <li><a onclick="filterByCategory('Men Watches', event)">Men Watches</a></li>
+        <li><a onclick="filterByCategory('Women Watches', event)">Women Watches</a></li>
+        <li><a onclick="filterByCategory('Smart Watches', event)">Smart Watches <span class="tag hot">HOT</span></a>
+        </li>
+        <li><a onclick="filterByCategory('Luxury Watches', event)">Luxury Watches</a></li>
+        <li><a onclick="filterByCategory('Automatic Watches', event)">Automatic Watches</a></li>
+        <li><a onclick="filterByCategory('Digital Watches', event)">Digital Watches</a></li>
+        <li><a onclick="filterByCategory('Classic Leather', event)">Classic Leather</a></li>
+        <li><a onclick="filterByCategory('Metal Strap Watches', event)">Metal Strap Watches</a></li>
+        <li><a onclick="filterByCategory('Sports Watches', event)">Sports Watches</a></li>
+        <li><a onclick="filterByCategory('Diving Watches', event)">Diving Watches</a></li>
       </ul>
     </aside>
+
+
 
     <div class="slider">
       <div class="slides" id="slides">
@@ -113,7 +156,9 @@
       <div class="hero-text">
         <h2>Luxury Timepieces</h2>
         <p>Crafted with precision, made for elegance.</p>
-        <button class="shop-now">Shop Now</button>
+        <a href="category1.html">
+          <button class="shop-now">Shop Now</button>
+        </a>
       </div>
 
 
@@ -202,7 +247,6 @@
 
   
   <!-- Banner full width -->
-
   <section class="vision-banner">
     <!-- Background video -->
     <video autoplay muted loop playsinline>
@@ -221,8 +265,9 @@
   <!-- Category Slider Container -->
   <div class="slider-wrapper category-slider-wrapper">
     <button class="arrow arrow-left" id="prevBtn">&#10094;</button>
-
     <div class="slider-viewport">
+      <h2>Our Featured Collection</h2>
+      <p>Discover the watches our customers love the most — stylish, durable, and crafted to impress.</p>
       <div class="slider-grid" id="sliderGrid">
         <!-- Slide Cards Start -->
         <div class="slide">
@@ -339,47 +384,48 @@
 
     <div class="news-grid">
       <!-- blog 1 -->
-      <div class="news-card">
-        <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2021/05/apple-watch-first-gen-renders.jpg"
-          alt="Luxury Watch">
-        <div class="news-content">
-          <div class="news-meta">COLLECTION — 10 Sep 2025</div>
-          <h3>Introducing The Luna Series</h3>
-          <p>Experience timeless elegance with our brand-new Luna Series – crafted with precision for those who value
-            class and durability.</p>
+      <a href="blogs.html">
+        <div class="news-card">
+          <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2021/05/apple-watch-first-gen-renders.jpg"
+            alt="Luxury Watch">
+          <div class="news-content">
+            <div class="news-meta">COLLECTION — 10 Sep 2025</div>
+            <h3>Introducing The Luna Series</h3>
+            <p>Experience timeless elegance with our brand-new Luna Series – crafted with precision for those who value
+              class and durability.</p>
+          </div>
         </div>
-      </div>
+      </a>
 
       <!-- blog 2 -->
-      <div class="news-card">
-        <img src="https://i.pcmag.com/imagery/lineups/01G8FEQIWosBgByduVIL7vQ-1.fit_lim.size_1200x630.v1571102408.jpg"
-          alt="Fashion Watch">
-        <div class="news-content">
-          <div class="news-meta">FASHION — 05 Sep 2025</div>
-          <h3>Top 5 Watches For Every Occasion</h3>
-          <p>From business meetings to evening dinners, discover our selection of versatile watches that blend style
-            with performance.</p>
+      <a href="blogs.html">
+        <div class="news-card">
+          <img src="https://i.pcmag.com/imagery/lineups/01G8FEQIWosBgByduVIL7vQ-1.fit_lim.size_1200x630.v1571102408.jpg"
+            alt="Fashion Watch">
+          <div class="news-content">
+            <div class="news-meta">FASHION — 05 Sep 2025</div>
+            <h3>Top 5 Watches For Every Occasion</h3>
+            <p>From business meetings to evening dinners, discover our selection of versatile watches that blend style
+              with performance.</p>
+          </div>
         </div>
-      </div>
-
+      </a>
       <!-- blog 3 -->
-      <div class="news-card">
-        <img src="https://shop.gadgetgogo.co.uk/wp-content/uploads/2021/07/music-apple-watch.jpg" alt="Men’s Watch">
-        <div class="news-content">
-          <div class="news-meta">STYLE — 01 Sep 2025</div>
-          <h3>Why Mash Watches Define Luxury</h3>
-          <p>Crafted with precision and designed with elegance, our watches stand out as a true symbol of sophistication
-            and success.</p>
+      <a href="blogs.html">
+        <div class="news-card">
+          <img src="https://shop.gadgetgogo.co.uk/wp-content/uploads/2021/07/music-apple-watch.jpg" alt="Men’s Watch">
+          <div class="news-content">
+            <div class="news-meta">STYLE — 01 Sep 2025</div>
+            <h3>Why Mash Watches Define Luxury</h3>
+            <p>Crafted with precision and designed with elegance, our watches stand out as a true symbol of
+              sophistication
+              and success.</p>
+          </div>
         </div>
-      </div>
     </div>
+    </a>
   </section>
-
-
-
-
   <!-- PREFOOTER -->
-
   <section class="prefooter">
     <div class="prefooter-container">
 
@@ -407,12 +453,13 @@
         <h3>Need help?<br>(+800) 1234 5678 90</h3>
         <p>We are available 24/7. Place Your Order Anytime.</p>
         <div class="app-buttons">
-          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-            alt="Google Play">
+          <a href="#">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+              alt="Google Play">
+          </a>
         </div>
       </div>
-
     </div>
     <!-- Toast -->
   <div id="toast" class="toast"></div>
@@ -431,17 +478,14 @@
         <div class="footer-column">
           <h3>Links</h3>
           <ul>
-            <li><a href="#">Shop Men</a></li>
-            <li><a href="#">Shop Women</a></li>
-            <li><a href="#">New Arrivals</a></li>
-            <li><a href="#">Best Sellers</a></li>
+            <li><a href="category1.html">All Collection</a></li>
           </ul>
         </div>
         <div class="footer-column">
           <h3>Customer Service</h3>
           <ul>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Shipping</a></li>
+            <li><a href="contactt.html">Contact Us</a></li>
+            <li><a href="blogs.html">Blog</a></li>
             <li><a href="#">Returns</a></li>
             <li><a href="#">FAQs</a></li>
           </ul>
@@ -450,7 +494,6 @@
           <h3>About</h3>
           <ul>
             <li><a href="#">Our Story</a></li>
-            <li><a href="#">Careers</a></li>
             <li><a href="#">Sustainability</a></li>
             <li><a href="#">Press</a></li>
           </ul>
@@ -458,8 +501,15 @@
       </div>
     </div>
   </footer>
+  <footer class="site-footer">
+    &copy; 2025 Mash Watches — All rights reserved
+  </footer>
 
+<<<<<<<< HEAD:hafsa.html
   <script src="./src/hafsa.js" defer></script>
+========
+  <script src="./src/index.js" defer></script>
+>>>>>>>> 83b16a9edf75df256f3e8fcd952c8a3bda8a203c:index.html
 </body>
 
 </html>

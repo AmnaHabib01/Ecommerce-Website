@@ -1,4 +1,3 @@
-
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 let product = null;
 let quantity = 1;
@@ -7,7 +6,11 @@ async function loadProduct() {
     const params = new URLSearchParams(window.location.search);
     const id = parseInt(params.get("id"));
 
+<<<<<<< HEAD:src/product.js
     const res = await fetch("productts.json");
+=======
+    const res = await fetch("productss.json");
+>>>>>>> 83b16a9edf75df256f3e8fcd952c8a3bda8a203c:src/productw.js
     const products = await res.json();
     product = products.find(p => p.id === id);
 
@@ -19,24 +22,15 @@ async function loadProduct() {
     document.getElementById("main-img").src = product.imgUrl;
     document.getElementById("product-name").textContent = product.name;
 
+    
     const priceBox = document.getElementById("product-price-box");
-    if (product.discount && product.discount > 0) {
-        const discounted = (product.price - (product.price * product.discount / 100)).toFixed(2);
-        priceBox.innerHTML = `
-          <span class="old">$${product.price.toFixed(2)}</span>
-          <span class="new">$${discounted}</span>
-          <small> (-${product.discount}%)</small>
-        `;
-    } else {
-        priceBox.innerHTML = `<span class="new">$${product.price.toFixed(2)}</span>`;
-    }
+    priceBox.innerHTML = `<span class="new">$${product.price.toFixed(2)}</span>`;
 
     if (product.rating) {
         document.getElementById("product-rating").innerHTML = `
           <p class="rating">⭐ ${product.rating} <span>(${product.reviews || 0} reviews)</span></p>
         `;
     }
-
     document.getElementById("product-category").textContent = product.category;
     document.getElementById("product-desc").textContent = product.description || "No description available.";
 

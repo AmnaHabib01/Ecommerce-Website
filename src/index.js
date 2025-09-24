@@ -26,7 +26,7 @@ function prevSlide() {
   currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
   updateSlidePosition();
 }
-setInterval(nextSlide, 8000); // Auto-slide every 5 seconds
+setInterval(nextSlide, 8000); 
 window.addEventListener('resize', () => {
   updateSlidePosition();
 });
@@ -43,7 +43,11 @@ let productsData = []; // store all products
 
 async function loadProducts() {
   try {
+<<<<<<<< HEAD:src/hafsa.js
     const response = await fetch("productts.json");
+========
+    const response = await fetch("productss.json");
+>>>>>>>> 83b16a9edf75df256f3e8fcd952c8a3bda8a203c:src/index.js
     productsData = await response.json();
     displayProducts(productsData);
   } catch (error) {
@@ -95,19 +99,43 @@ function filterProducts() {
   });
 
   displayProducts(filtered);
+
+  // Scroll removed — search will scroll only on Enter
 }
+
+
+function filterByCategory(category) {
+  // prevent link reload in a generic way
+  window.event?.preventDefault();
+
+  searchInput.value = "";
+  categorySelect.value = category === "all" ? "Select Category" : category;
+  filterProducts();
+
+  document.getElementById("product-list").scrollIntoView({
+    behavior: "smooth"
+  });
+}
+
 
 // Event listeners
 searchInput.addEventListener("input", filterProducts);
-categorySelect.addEventListener("change", filterProducts);
+categorySelect.addEventListener("change", () => {
+  filterProducts();
+  // Scroll to products when category is selected
+  document.getElementById("product-list").scrollIntoView({ behavior: "smooth" });
+});
 
 // Stop reload on Enter
 searchInput.addEventListener("keypress", (e) => {
   if (e.key === "Enter") {
     e.preventDefault();
     filterProducts();
+    // Scroll to products only when Enter is pressed
+    document.getElementById("product-list").scrollIntoView({ behavior: "smooth" });
   }
 });
+
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 // Add to cart
@@ -155,7 +183,11 @@ function showToast(message) {
 }
 // Go to product detail page
 function openProductPage(id) {
+<<<<<<<< HEAD:src/hafsa.js
   window.location.href = `productt.html?id=${id}`;
+========
+  window.location.href = `productw.html?id=${id}`;
+>>>>>>>> 83b16a9edf75df256f3e8fcd952c8a3bda8a203c:src/index.js
 }
 
 // On page load
@@ -165,7 +197,7 @@ updateCartIcon();
 // Initial load
 loadProducts();
 
-//js of cards (sadiqa)
+
 // sliderCards.js
 document.addEventListener("DOMContentLoaded", () => {
   const track = document.getElementById("sliderGrid");
@@ -242,6 +274,7 @@ document.addEventListener("DOMContentLoaded", () => {
   updateSliderGridWidth();
 });
 
+<<<<<<<< HEAD:src/hafsa.js
 const form = document.getElementById("newsletterForm");
     const emailInput = document.getElementById("newsletterEmail");
     const toast = document.getElementById("toast");
@@ -261,3 +294,6 @@ const form = document.getElementById("newsletterForm");
         showToast("⚠️ Please enter a valid email!");
       }
     });
+========
+
+>>>>>>>> 83b16a9edf75df256f3e8fcd952c8a3bda8a203c:src/index.js
