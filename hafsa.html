@@ -385,15 +385,22 @@
 
       <!-- Newsletter -->
       <div class="newsletter">
-        <h2>Get our emails for info on new watches, sales & more.</h2>
-        <p>We’ll email you a voucher worth Rs.5000 off your first order over Rs.15000.</p>
-        <form>
-          <input type="email" placeholder="Enter your email address" required>
-          <button type="submit">Subscribe</button>
-        </form>
-        <small>By subscribing you agree to our <a href="#" style="color:#fff; text-decoration:underline;">Terms &
-            Conditions</a> and <a href="#" style="color:#fff; text-decoration:underline;">Privacy Policy</a>.</small>
-      </div>
+       
+    <h2>Get our emails for info on new watches, sales & more.</h2>
+    <p>We’ll email you a voucher worth Rs.5000 off your first order over Rs.15000.</p>
+    <form id="newsletterForm">
+      <input type="email" id="newsletterEmail" placeholder="Enter your email address" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    <small>
+      By subscribing you agree to our 
+      <a href="#" style="color:#fff; text-decoration:underline;">Terms & Conditions</a> 
+      and 
+      <a href="#" style="color:#fff; text-decoration:underline;">Privacy Policy</a>.
+    </small>
+  </div>
+
+  
 
       <!-- Help + App Downloads -->
       <div class="help">
@@ -407,6 +414,8 @@
       </div>
 
     </div>
+    <!-- Toast -->
+  <div id="toast" class="toast"></div>
   </section>
   <!-- Footer -->
   <footer class="footer">

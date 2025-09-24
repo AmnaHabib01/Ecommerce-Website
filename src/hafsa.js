@@ -241,3 +241,23 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("resize", updateSliderGridWidth);
   updateSliderGridWidth();
 });
+
+const form = document.getElementById("newsletterForm");
+    const emailInput = document.getElementById("newsletterEmail");
+    const toast = document.getElementById("toast");
+
+    function showToast(message) {
+      toast.textContent = message;
+      toast.classList.add("show");
+      setTimeout(() => toast.classList.remove("show"), 3000);
+    }
+
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      if(emailInput.value.trim() !== "") {
+        showToast("🎉 You have subscribed successfully!");
+        form.reset();
+      } else {
+        showToast("⚠️ Please enter a valid email!");
+      }
+    });

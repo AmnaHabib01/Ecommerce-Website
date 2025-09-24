@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mash Watches | Blogs</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #fff;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      border-bottom: 1px solid #eee;
+    }
+
+    header .logo {
+      height: 50px;
+    }
+
+    header .btn-white {
+      background: #fff;
+      border: 2px solid #92140c;
+      color: #92140c;
+      padding: 8px 16px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+
+    header .btn-white:hover {
+      background: #92140c;
+      color: #fff;
+    }
+
+    /* Navbar */
+    nav {
+      background:#92140c;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #ffcf99;
+    }
+
+    /* Blog Section */
+    .news-section {
+      text-align: center;
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .news-section h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: #92140c;
+    }
+
+    .news-section p {
+      font-size: 16px;
+      color: #444;
+      margin-bottom: 40px;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .news-card {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .news-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .news-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .news-content {
+      padding: 20px;
+      text-align: left;
+    }
+
+    .news-meta {
+      font-size: 13px;
+      color: #92140c;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .news-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    .news-card p {
+      font-size: 15px;
+      color: #555;
+    }
+
+    /* Footer */
+    footer {
+      background: black;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo-title">
+      <img src="./images/logo2.png" alt="MASH WATCHES" class="logo">
+    </div>
+    <a href="hafsa.html" class="btn-white">← Continue Shopping</a>
+  </header>
+
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="hafsa.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="blog.html" class="active">Blogs</a></li>
+    </ul>
+  </nav>
+
+  <!-- Blogs Section -->
+  <section class="news-section">
+    <h2>Our Latest News</h2>
+    <p>Stay updated with the latest trends, stories, and releases from Mash Watches – where time meets elegance.</p>
+
+    <div class="news-grid">
+      <!-- Blog 1 -->
+      <div class="news-card">
+        <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2021/05/apple-watch-first-gen-renders.jpg" alt="Luxury Watch">
+        <div class="news-content">
+          <div class="news-meta">COLLECTION — 10 Sep 2025</div>
+          <h3>Introducing The Luna Series</h3>
+          <p>Experience timeless elegance with our brand-new Luna Series – crafted with precision for those who value class and durability.</p>
+        </div>
+      </div>
+
+      <!-- Blog 2 -->
+      <div class="news-card">
+        <img src="https://i.pcmag.com/imagery/lineups/01G8FEQIWosBgByduVIL7vQ-1.fit_lim.size_1200x630.v1571102408.jpg" alt="Fashion Watch">
+        <div class="news-content">
+          <div class="news-meta">FASHION — 05 Sep 2025</div>
+          <h3>Top 5 Watches For Every Occasion</h3>
+          <p>From business meetings to evening dinners, discover our selection of versatile watches that blend style with performance.</p>
+        </div>
+      </div>
+
+      <!-- Blog 3 -->
+      <div class="news-card">
+        <img src="https://shop.gadgetgogo.co.uk/wp-content/uploads/2021/07/music-apple-watch.jpg" alt="Men’s Watch">
+        <div class="news-content">
+          <div class="news-meta">STYLE — 01 Sep 2025</div>
+          <h3>Why Mash Watches Define Luxury</h3>
+          <p>Crafted with precision and designed with elegance, our watches stand out as a true symbol of sophistication and success.</p>
+        </div>
+      </div>
+
+      <!-- Blog 4 -->
+      <div class="news-card">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.l1RXlJV_nGbAyl0rXBDSwAHaEe?w=1110&h=672&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Automatic Watch">
+        <div class="news-content">
+          <div class="news-meta">TECH — 25 Aug 2025</div>
+          <h3>The Beauty of Automatic Watches</h3>
+          <p>Discover why automatic watches remain timeless icons, combining craftsmanship with cutting-edge technology.</p>
+        </div>
+      </div>
+
+      <!-- Blog 5 -->
+      <div class="news-card">
+        <img src="https://cdn.mos.cms.futurecdn.net/vHkHWPj6PibWwSwhEkSHNd.jpg" alt="Smart vs Traditional">
+        <div class="news-content">
+          <div class="news-meta">INSIGHT — 20 Aug 2025</div>
+          <h3>Smartwatches vs. Traditional Timepieces</h3>
+          <p>From fitness tracking to classic style, explore the strengths of both worlds and find your perfect companion.</p>
+        </div>
+      </div>
+
+      <!-- Blog 6 -->
+      <div class="news-card">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.06Ve4qcE0VIwLWrOengTmQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Watch Care">
+        <div class="news-content">
+          <div class="news-meta">GUIDE — 15 Aug 2025</div>
+          <h3>How to Care for Your Luxury Watch</h3>
+          <p>Maintain your watch’s brilliance with our easy care tips — ensuring it stays reliable and elegant for years to come.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mash Watches. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
